@@ -7,7 +7,7 @@
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
         "headline": "iOS Developer and AI Engineer",
-        "subline": "I'm Marsha, a tech developer, where I code user interactive aplication features and Deep Learning for Image Classification. I am an University Student class of 2021."
+        "subline": "I'm Marsha, a tech developer, where I code user interactive application features and Deep Learning for Image Classification. I am an University Student class of 2021."
     },
     "about": {
         "label": "About",
@@ -55,7 +55,7 @@
                     "description": "Led and released 2 iOS app to the AppStore, including BillBro which has achieved 100 downloads with a 5 star rating"
                 },
                 "MySQL": {
-                    "description": "Database management for biulding websites and apps using MySql"
+                    "description": "Database management for building websites and apps using MySql"
                 }
             }
         }
