@@ -1,81 +1,68 @@
 {
     "person": {
-        "role": "Insinyur Desain"
-    },
-    "newsletter": {
-        "title": "Langganan Buletin {firstName}",
-        "description": "Saya sesekali menulis tentang desain, teknologi, dan berbagi pemikiran tentang persimpangan kreativitas dan rekayasa",
-        "button": "Daftar"
+        "role": "Pengembang Teknologi" 
     },
     "home": {
         "label": "Beranda",
         "title": "Portofolio {name}",
         "description": "Situs web portofolio yang menampilkan karya saya sebagai {role}",
-        "headline": "Insinyur desain dan pembangun",
-        "subline": "Saya Selene, seorang insinyur desain di FLY, di mana saya membuat pengalaman pengguna yang intuitif. Setelah jam kerja, saya mengerjakan proyek-proyek pribadi."
+        "headline": "Pengembang iOS dan Insinyur AI",
+        "subline": "Saya Marsha, seorang pengembang teknologi, di mana saya membuat kode fitur aplikasi interaktif pengguna dan Deep Learning untuk Klasifikasi Gambar. Saya adalah Mahasiswa Universitas angkatan 2021."
     },
     "about": {
         "label": "Tentang",
-        "title": "Tentang Saya",
-        "description": "Kenali {name}, {role} dari {location}",
+        "title": "Tentang saya",
+        "description": "Temui {name}, {role} dari {location}",
         "intro": {
-            "title": "Pengantar",
-            "description": "Selene adalah seorang insinyur desain yang berbasis di Jakarta dengan hasrat untuk mengubah tantangan kompleks menjadi solusi desain yang sederhana dan elegan. Karyanya meliputi antarmuka digital, pengalaman interaktif, dan pertemuan antara desain dan teknologi."
+            "title": "Pendahuluan",
+            "description": "Marsha adalah seorang pengembang teknologi yang berbasis di Surabaya yang bersemangat untuk berkontribusi dengan keterampilan dan antusiasme untuk peran yang menantang di mana saya dapat lebih lanjut mengeksplorasi teknologi mutakhir dalam pengembangan teknologi, dengan fokus pada peningkatan pengalaman pengguna dan menciptakan solusi teknologi yang berdampak."
         },
         "work": {
             "title": "Pengalaman Kerja",
             "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Sekarang",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Mendesain ulang UI/UX untuk platform FLY, menghasilkan peningkatan keterlibatan pengguna sebesar 20% dan waktu muat lebih cepat sebesar 30%.;Memimpin integrasi alat AI ke dalam alur kerja desain, memungkinkan desainer untuk iterasi 50% lebih cepat."
+                "Apple Developer Academy @ UC": {
+                    "timeframe": "Maret 2024 - Desember 2024",
+                    "role": "Pengembang iOS",
+                    "achievements": "Berhasil memimpin pengembangan dua aplikasi, ArchCalculator dan BillBro, yang menunjukkan keterampilan teknis dan kreativitas. BillBro, dirancang untuk mengelola pengeluaran kelompok, telah mencapai lebih dari 100 unduhan dengan peringkat 5 bintang."
                 },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Desainer Utama",
-                    "achievements": "Mengembangkan sistem desain yang menyatukan merek di berbagai platform, meningkatkan konsistensi desain sebesar 40%.;Memimpin tim lintas fungsi untuk meluncurkan lini produk baru, berkontribusi pada peningkatan pendapatan perusahaan sebesar 15%."
+                "Teaching & Learning Innovation Center": {
+                    "timeframe": "Juli 2023 - Desember 2023",
+                    "role": "AI Researcher Intern",
+                    "achievements": "Kontribusi dalam pengembangan alat pengajaran inovatif yang meningkatkan keterlibatan siswa."
+                }, 
+                "Universitas Ciputra Surabaya": {
+                    "timeframe": "Februari 2023 - Januari 2024",
+                    "role": "Asisten Dosen Pemrograman",
+                    "achievements": "Memberikan dukungan satu-satu kepada siswa, membantu mereka mengatasi tantangan dalam tugas pemrograman mereka."
                 }
             }
         },
         "studies": {
             "title": "Pendidikan",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Belajar teknik perangkat lunak."
-                },
-                "Build the Future": {
-                    "description": "Belajar pemasaran online dan personal branding."
+                "Universitas Ciputra Surabaya": {
+                    "description": "Mempelajari informatika."
                 }
             }
         },
         "technical": {
-            "title": "Kemampuan Teknis",
+            "title": "Keterampilan Teknis",
             "skills": {
-                "Figma": {
-                    "description": "Mampu membuat prototipe di Figma dengan Once UI dengan kecepatan luar biasa."
+                "Python": {
+                    "description": "Dapat mengimplementasikan Model Deep Learning dengan akurasi 99,5% dan publikasi di jurnal yang terindeks Sinta-4"
                 },
-                "Nextjs": {
-                    "description": "Membangun aplikasi generasi berikutnya dengan Next.js + Once UI + Supabase."
+                "Swift": {
+                    "description": "Memimpin dan merilis 2 aplikasi iOS ke AppStore, termasuk BillBro yang telah mencapai 100 unduhan dengan peringkat 5 bintang"
+                },
+                "MySQL": {
+                    "description": "Manajemen database untuk membangun situs web dan aplikasi menggunakan MySql"
                 }
             }
         }
     },
-    "blog": {
-        "label": "Blog",
-        "title": "Menulis tentang desain dan teknologi...",
-        "description": "Baca apa yang {name} lakukan baru-baru ini"
-    },
     "work": {
         "label": "Karya",
-        "title": "Proyek Saya",
-        "description": "Proyek desain dan pengembangan oleh {name}"
-    },
-    "gallery": {
-        "label": "Galeri",
-        "title": "Galeri Foto Saya",
-        "description": "Koleksi foto oleh {name}"
-    },
-    "projectCard": {
-        "label": "Baca Studi Kasus"
+        "title": "Proyek saya",
+        "description": "Desain dan pengembangan proyek oleh {name}"
     }
 }

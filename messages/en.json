@@ -1,18 +1,13 @@
 {
     "person": {
-        "role": "Design Engineer"
-    },
-    "newsletter": {
-        "title": "Subscribe to {firstName}'s Newsletter",
-        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
-        "button": "Sign up"
+        "role": "Tech Developer"
     },
     "home": {
         "label": "Home",
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
-        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+        "headline": "iOS Developer and AI Engineer",
+        "subline": "I'm Marsha, a tech developer, where I code user interactive aplication features and Deep Learning for Image Classification. I am an University Student class 2021."
     },
     "about": {
         "label": "About",
@@ -20,62 +15,54 @@
         "description": "Meet {name}, {role} from {location}",
         "intro": {
             "title": "Introduction",
-            "description": "Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology."
+            "description": "Marsha is a Surabaya-based tech developer eager to contribute skills and enthusiasm to a challenging role where I can further explore cutting edge technologies in tech development, focusing on enhancing user experience and creating impactful tech solutions"
         },
         "work": {
             "title": "Work Experience",
             "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Present",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
+                "Apple Developer Academy @ UC": {
+                    "timeframe": "March 2024 - December 2024",
+                    "role": "iOS Developer",
+                    "achievements": "Successfully led the development of two applications, ArchCalculator and BillBro, showcasing technical skills and creativity. BillBro, designed for managing group expenses, has achieved over 100 downloads with a 5-star rating."
                 },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Lead Designer",
-                    "achievements": "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.;Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue."
+                "Teaching & Learning Innovation Center": {
+                    "timeframe": "July 2023 - December 2023",
+                    "role": "AI Researcher Intern",
+                    "achievements": "Contributed to the development of innovative teaching tools that improved student engagement."
+                }, 
+                "Universitas Ciputra Surabaya": {
+                    "timeframe": "February 2023 - January 2024",
+                    "role": "Programming Assistant Lecturer",
+                    "achievements": "Provided one-on-one support to students, helping them navigate challenges in their programming assignments."
                 }
             }
         },
         "studies": {
             "title": "Studies",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Studied software engineering."
-                },
-                "Build the Future": {
-                    "description": "Studied online marketing and personal branding."
+                "Universitas Ciputra Surabaya": {
+                    "description": "Studied informatics."
                 }
             }
         },
         "technical": {
             "title": "Technical skills",
             "skills": {
-                "Figma": {
-                    "description": "Able to prototype in Figma with Once UI with unnatural speed."
+                "Python": {
+                    "description": "Able to implement a Deep Learning Model with the accuracy of 99.5% and publication in a Sinta-4-indexed journal"
                 },
-                "Nextjs": {
-                    "description": "Building next gen apps with Next.js + Once UI + Supabase."
+                "Swift": {
+                    "description": "Led and released 2 iOS app to the AppStore, including BillBro which has achieved 100 downloads with a 5 star rating"
+                },
+                "MySQL": {
+                    "description": "Database management for biulding websites and apps using MySql"
                 }
             }
         }
-    },
-    "blog": {
-        "label": "Blog",
-        "title": "Writing about design and tech...",
-        "description": "Read what {name} has been up to recently"
     },
     "work": {
         "label": "Work",
         "title": "My projects",
         "description": "Design and dev projects by {name}"
-    },
-    "gallery": {
-        "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by {name}"
-    },
-    "projectCard": {
-        "label": "Read Case Study"
     }
 }
