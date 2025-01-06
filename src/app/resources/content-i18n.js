@@ -72,8 +72,26 @@ const createI18nContent = (t) => {
                     achievements: t("about.work.experiences.Apple Developer Academy @ UC.achievements").split(";"),
                     images: [ // optional: leave the array empty if you don't want to display images
                         {
-                            src: '/images/projects/project-01/cover-01.jpg',
-                            alt: 'Once UI Project',
+                            src: '/images/projects/project-01/certificate-apple.jpeg',
+                            alt: 'Project',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            src: '/images/projects/project-01/swift.png',
+                            alt: 'Swift Project',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            src: '/images/projects/project-01/grad.jpeg',
+                            alt: 'Project',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            src: '/images/projects/project-01/billbro.jpeg',
+                            alt: 'Project',
                             width: 16,
                             height: 9
                         }
@@ -114,7 +132,7 @@ const createI18nContent = (t) => {
                     description: <>{t("about.technical.skills.Python.description")}</>,
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-02.jpg',
+                            src: '/images/projects/project-01/python.png',
                             alt: 'Project image',
                             width: 16,
                             height: 9
@@ -126,7 +144,7 @@ const createI18nContent = (t) => {
                     description: <>{t("about.technical.skills.Swift.description")}</>, // "." not accepted in next-intl namespace
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-04.jpg',
+                            src: '/images/projects/project-01/swift.png',
                             alt: 'Project image',
                             width: 16,
                             height: 9
