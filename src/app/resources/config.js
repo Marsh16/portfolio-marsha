@@ -1,4 +1,4 @@
-const baseURL = 'demo.magic-portfolio.com'
+const baseURL = 'portfolio-marsha.vercel.app'
 
 // Enable localization
 const i18n = false;
@@ -12,9 +12,7 @@ const i18nOptions = {
 const routes = {
     '/':        true,
     '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': true,
+    '/work':    true
 }
 
 // Enable password protection on selected routes

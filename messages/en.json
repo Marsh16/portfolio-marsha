@@ -7,7 +7,7 @@
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
         "headline": "iOS Developer and AI Engineer",
-        "subline": "I'm Marsha, a tech developer, where I code user interactive aplication features and Deep Learning for Image Classification. I am an University Student class 2021."
+        "subline": "I'm Marsha, a tech developer, where I code user interactive aplication features and Deep Learning for Image Classification. I am an University Student class of 2021."
     },
     "about": {
         "label": "About",
@@ -15,7 +15,7 @@
         "description": "Meet {name}, {role} from {location}",
         "intro": {
             "title": "Introduction",
-            "description": "Marsha is a Surabaya-based tech developer eager to contribute skills and enthusiasm to a challenging role where I can further explore cutting edge technologies in tech development, focusing on enhancing user experience and creating impactful tech solutions"
+            "description": "Marsha is a Surabaya-based tech developer eager to contribute skills and enthusiasm to a challenging role where I can further explore cutting edge technologies in tech development, focusing on enhancing user experience and creating impactful tech solutions."
         },
         "work": {
             "title": "Work Experience",
