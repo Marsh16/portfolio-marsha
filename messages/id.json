@@ -64,5 +64,8 @@
         "label": "Karya",
         "title": "Proyek saya",
         "description": "Desain dan pengembangan proyek oleh {name}"
+    },
+    "projectCard": {
+        "label": "Baca Studi Kasus"
     }
 }

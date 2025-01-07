@@ -64,5 +64,8 @@
         "label": "Work",
         "title": "My projects",
         "description": "Design and dev projects by {name}"
+    },
+    "projectCard": {
+        "label": "Read Case Study"
     }
 }
