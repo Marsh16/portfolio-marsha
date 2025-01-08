@@ -105,6 +105,20 @@ const createI18nContent = (t) => {
                     images: [ ]
                 },
                 {
+                    company: 'Biro Bebras UC',
+                    timeframe: t("about.work.experiences.Biro Bebras UC.timeframe"),
+                    role: t("about.work.experiences.Biro Bebras UC.role"),
+                    achievements: t("about.work.experiences.Biro Bebras UC.achievements").split(";"),
+                    images: [ 
+                        {
+                            src: '/images/projects/project-01/experiences/bebras.png',
+                            alt: 'Project',
+                            width: 16,
+                            height: 9
+                        },
+                    ]
+                },
+                {
                     company: 'Universitas Ciputra Surabaya',
                     timeframe: t("about.work.experiences.Universitas Ciputra Surabaya.timeframe"),
                     role: t("about.work.experiences.Universitas Ciputra Surabaya.role"),
