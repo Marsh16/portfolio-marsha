@@ -105,6 +105,20 @@ const createContent = (t) => {
                     images: [ ]
                 },
                 {
+                    company: 'Statistics and Probability Textbooks Using the Python Programming Language',
+                    timeframe: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.timeframe"),
+                    role: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.role"),
+                    achievements: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.achievements").split(";"),
+                    images: [ ]
+                },  
+                {
+                    company: 'Teacher Innovative Behavior Model Research',
+                    timeframe: t("about.work.experiences.Teacher Innovative Behavior Model Research.timeframe"),
+                    role: t("about.work.experiences.Teacher Innovative Behavior Model Research.role"),
+                    achievements: t("about.work.experiences.Teacher Innovative Behavior Model Research.achievements").split(";"),
+                    images: [ ]
+                },
+                {
                     company: 'Biro Bebras UC',
                     timeframe: t("about.work.experiences.Biro Bebras UC.timeframe"),
                     role: t("about.work.experiences.Biro Bebras UC.role"),
