@@ -6,8 +6,8 @@
         "label": "Home",
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "iOS Developer and AI Engineer",
-        "subline": "I'm Marsha, a Tech Developer, where I code user interactive application features and Deep Learning for Image Classification. I am an University Student class of 2021."
+        "headline": "Software Engineer specializing in AI and iOS Development",
+        "subline": "I'm Marsha, a Tech Developer crafting user-interactive applications and implementing artificial intelligence. University Student (Class of 2021)."
     },
     "about": {
         "label": "About",
@@ -20,6 +20,11 @@
         "work": {
             "title": "Work Experience",
             "experiences": {
+                "PT Salam Pacific Indonesia Lines": {
+                    "timeframe": "February 2025 - August 2025",
+                    "role": "Artificial Intelligence Intern",
+                    "achievements": "Deployed an LLM-powered car service receipt input feature using the Gemini Flash 1.5 API, improving user experience and input speed."
+                },
                 "Apple Developer Academy @ UC": {
                     "timeframe": "March 2024 - December 2024",
                     "role": "iOS Developer",
