@@ -66,6 +66,14 @@ const createContent = (t) => {
             title: t("about.work.title"),
             experiences: [
                 {
+                    company: 'PT Salam Pacific Indonesia Lines',
+                    timeframe: t("about.work.experiences.PT Salam Pacific Indonesia Lines.timeframe"),
+                    role: t("about.work.experiences.PT Salam Pacific Indonesia Lines.role"),
+                    achievements: t("about.work.experiences.PT Salam Pacific Indonesia Lines.achievements").split(";"),
+                    images: [ // optional: leave the array empty if you don't want to display images
+                    ]
+                },
+                {
                     company: 'Apple Developer Academy @ UC',
                     timeframe: t("about.work.experiences.Apple Developer Academy @ UC.timeframe"),
                     role: t("about.work.experiences.Apple Developer Academy @ UC.role"),
@@ -104,20 +112,20 @@ const createContent = (t) => {
                     achievements: t("about.work.experiences.Teaching & Learning Innovation Center.achievements").split(";"),
                     images: [ ]
                 },
-                {
-                    company: 'Statistics and Probability Textbooks Using the Python Programming Language',
-                    timeframe: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.timeframe"),
-                    role: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.role"),
-                    achievements: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.achievements").split(";"),
-                    images: [ ]
-                },  
-                {
-                    company: 'Teacher Innovative Behavior Model Research',
-                    timeframe: t("about.work.experiences.Teacher Innovative Behavior Model Research.timeframe"),
-                    role: t("about.work.experiences.Teacher Innovative Behavior Model Research.role"),
-                    achievements: t("about.work.experiences.Teacher Innovative Behavior Model Research.achievements").split(";"),
-                    images: [ ]
-                },
+                // {
+                //     company: 'Statistics and Probability Textbooks Using the Python Programming Language',
+                //     timeframe: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.timeframe"),
+                //     role: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.role"),
+                //     achievements: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.achievements").split(";"),
+                //     images: [ ]
+                // },  
+                // {
+                //     company: 'Teacher Innovative Behavior Model Research',
+                //     timeframe: t("about.work.experiences.Teacher Innovative Behavior Model Research.timeframe"),
+                //     role: t("about.work.experiences.Teacher Innovative Behavior Model Research.role"),
+                //     achievements: t("about.work.experiences.Teacher Innovative Behavior Model Research.achievements").split(";"),
+                //     images: [ ]
+                // },
                 {
                     company: 'Biro Bebras UC',
                     timeframe: t("about.work.experiences.Biro Bebras UC.timeframe"),
