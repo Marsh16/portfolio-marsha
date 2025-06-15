@@ -1,0 +1,61 @@
+title: "APAR Monitor: Airport Fire Extinguisher Checklist System"
+publishedAt: "2025-04-21"
+summary: "Ensuring fire safety in airports, APAR Monitor streamlines the inspection process of light fire extinguishers across airport zones.
+
+Manual APAR inspections are prone to inconsistency and data loss. APAR Monitor transforms this workflow by enabling digital checklist submission, zone-based tracking, and real-time reporting via a modern web interface. Inspectors scan barcodes on fire extinguishers, fill out a structured checklist, and submit condition reports directly from the field. Admins can view inspection histories, export reports, and ensure safety compliance—making the process faster, more accurate, and audit-friendly. Built with performance in mind, the system leverages a clean, responsive UI using Tailwind CSS."
+images:
+  - "/images/projects/project-02/apar-monitor-dashboard.png"
+  - "/images/projects/project-02/apar-checklist.png"
+  - "/images/projects/project-02/apar-map.png"
+team:
+  - name: "Marsha Alexis Likorawung"
+    role: "Full-stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/marsha-alexis-likorawung-16b13a267/"
+---
+
+## Overview
+
+APAR Monitor is a modern web app that digitizes the inspection of airport fire extinguishers (APAR). Each extinguisher is associated with a barcode and a specific zone. Inspectors can scan, check, and log the condition of APAR units, while administrators monitor inspection records across all zones.
+
+The platform reduces manual error, enhances traceability, and increases the efficiency of routine fire safety operations.
+
+## Key Features
+
+- **Barcode Scanning**: Identify APARs instantly via webcam barcode scanner.
+- **Checklist Submission**: Log conditions (pressure, safety pin, hose) via interactive form.
+- **Zone Overview**: View APARs by location using dynamic mapping visuals.
+- **PDF Report Export**: Generate and download checklist reports as PDFs.
+- **Role Management**: Inspector and Admin roles with tailored views and permissions.
+- **Inspection Log**: Access and filter historical inspection data.
+
+## Technologies Used
+
+- **Frontend**: React.js with Tailwind CSS for lightweight and responsive UI.
+- **Scanner**: react-qr-barcode-scanner for in-browser scanning.
+- **Backend**: Firebase Firestore for real-time data and authentication.
+- **PDF Generation**: jsPDF to export inspection records.
+- **Deployment**: Vercel for fast and seamless deployment.
+
+## Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS, React Router
+- **Backend**: Firebase Firestore, Firebase Authentication
+- **Libraries**: react-qr-barcode-scanner, jsPDF
+- **Hosting**: Vercel
+
+## Challenges and Learnings
+
+Barcode scanning across different devices was a key challenge, requiring fallback handling for low-resolution cameras and permissions. Managing inspection roles securely and creating a dynamic form-to-PDF pipeline also pushed the project’s architectural design.
+
+Key learnings included:
+- Writing scalable React components with Tailwind CSS utility classes.
+- Implementing secure role-based access in Firebase.
+- Building responsive, offline-aware interfaces.
+- Structuring Firestore data efficiently for both real-time UI updates and archival reporting.
+
+## Outcome
+
+APAR Monitor is live at [apar-monitor.vercel.app](https://apar-monitor.vercel.app/), used to inspect fire extinguishers in real airport environments. It enhances safety compliance, saves time, and digitizes what was once a pen-and-paper task—proving the value of well-designed web tools in operational workflows.
+
+This project reflects my full-stack capabilities and ability to deliver production-ready tools tailored to real-world needs.

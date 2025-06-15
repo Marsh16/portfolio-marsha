@@ -1,0 +1,62 @@
+title: "LeafsAI: AI-Powered Leaf Disease Diagnosis & Assistant"
+publishedAt: "2025-02-10"
+summary: "Combining computer vision and generative AI, LeafsAI helps farmers and researchers detect leaf diseases and get contextual answers powered by IBM Watsonx.
+
+Developed in collaboration with Universitas Ciputra and IBM SkillsBuild, LeafsAI is an AI platform that identifies leaf diseases from images and provides instant Q&A support about the diagnosis. By integrating an image classification model with IBM Watsonx's Granite LLM, this tool empowers users with not just detection—but understanding. The platform is built with an accessible web interface and deploys a seamless end-to-end AI experience for agriculture and plant health monitoring."
+images:
+  - "/images/projects/project-03/watsonx.png"
+  - "/images/projects/project-03/leafsai-home.png"
+  - "/images/projects/project-03/leafsai-detection.png"
+  - "/images/projects/project-03/leafsai-chat.png"
+  - "/images/projects/project-03/watsonx-granite.png"
+team:
+  - name: "Marsha Alexis Likorawung"
+    role: "AI Developer (LLM & Computer Vision)"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/marsha-alexis-likorawung-16b13a267/"
+---
+
+## Overview
+
+LeafsAI is a web-based AI assistant for plant disease detection and diagnosis support. Aimed at improving agricultural decision-making, the platform allows users to upload a photo of a leaf, get an instant disease prediction, and interact with an LLM to learn more about the disease, symptoms, and treatment options.
+
+This project was created as part of the IBM Watsonx SkillsBuild initiative in collaboration with Universitas Ciputra.
+
+## Key Features
+
+- **Leaf Disease Detection**: Upload images to receive instant classification results.
+- **LLM-Based Q&A**: Ask follow-up questions about detected diseases with Watsonx Granite.
+- **User-Friendly Interface**: Simple UI built for students, farmers, and researchers.
+- **Multi-Modal AI Integration**: Combines computer vision + generative language models.
+- **Live Deployment**: Publicly accessible at [leafs-ai.vercel.app](https://leafs-ai.vercel.app/).
+
+## Technologies Used
+
+- **Computer Vision**: Trained image classification model using TensorFlow/Keras.
+- **Large Language Model**: IBM Watsonx Granite for domain-specific Q&A.
+- **Frontend**: Next.js with Tailwind CSS for fast, responsive design.
+- **Backend**: Node.js API for processing predictions and routing LLM prompts.
+- **Deployment**: Vercel for frontend, IBM Cloud for AI model integration.
+
+## Tech Stack
+
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, Express
+- **AI/ML**: TensorFlow, IBM Watsonx Granite
+- **Hosting**: Vercel (frontend), IBM Cloud (AI backend)
+
+## Challenges and Learnings
+
+One of the biggest challenges was merging a vision pipeline with a conversational LLM, especially when ensuring response relevance and maintaining a seamless UX. Additional complexity came from structuring domain-specific prompts and managing inference latency.
+
+Key learnings:
+- Building prompt templates for LLMs in domain-specific use cases.
+- Handling async coordination between image prediction and LLM interaction.
+- Designing multi-modal user experiences using Next.js and Tailwind.
+- Deploying integrated ML + LLM pipelines into real-world tools.
+
+## Outcome
+
+LeafsAI is a successful proof of concept that demonstrates how generative AI and computer vision can work together to solve agricultural problems. The project highlights the power of IBM Watsonx as a practical tool for building intelligent assistants that go beyond simple predictions—supporting real-time decision-making in a user-friendly way.
+
+Live at [leafs-ai.vercel.app](https://leafs-ai.vercel.app/), the platform continues to evolve with feedback from students, educators, and agricultural stakeholders.
