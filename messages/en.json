@@ -1,91 +1,119 @@
 {
-    "person": {
-        "role": "Tech Developer"
-    },
-    "home": {
-        "label": "Home",
-        "title": "{name}'s Portfolio",
-        "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Software Engineer specializing in AI and iOS Development",
-        "subline": "I'm Marsha, a Tech Developer crafting user-interactive applications and implementing artificial intelligence. University Student (Class of 2021)."
-    },
-    "about": {
-        "label": "About",
-        "title": "About me",
-        "description": "Meet {name}, {role} from {location}",
-        "intro": {
-            "title": "Introduction",
-            "description": "Marsha is a Surabaya-based tech developer eager to contribute skills and enthusiasm to a challenging role where I can further explore cutting edge technologies in tech development, focusing on enhancing user experience and creating impactful tech solutions."
-        },
-        "work": {
-            "title": "Work Experience",
-            "experiences": {
-                "PT Salam Pacific Indonesia Lines": {
-                    "timeframe": "February 2025 - August 2025",
-                    "role": "Artificial Intelligence Intern",
-                    "achievements": "Deployed an LLM-powered car service receipt input feature using the Gemini Flash 1.5 API, improving user experience and input speed."
-                },
-                "Apple Developer Academy @ UC": {
-                    "timeframe": "March 2024 - December 2024",
-                    "role": "iOS Developer",
-                    "achievements": "Successfully led the development of two applications, ArchCalculator and BillBro, showcasing technical skills and creativity. BillBro, designed for managing group expenses, has achieved over 100 downloads with a 5-star rating."
-                },
-                "Teaching & Learning Innovation Center": {
-                    "timeframe": "July 2023 - December 2023",
-                    "role": "AI Researcher Intern",
-                    "achievements": "Contributed to the development of innovative teaching tools that improved student engagement."
-                },
-                "Statistics and Probability Textbooks Using the Python Programming Language": {
-                    "timeframe": "July 2023 - October 2023",
-                    "role": "Research Assistant",
-                    "achievements": "Became a research assistant in the making of Statistics and Probability textbooks using the Python programming language"
-                },      
-                "Teacher Innovative Behavior Model Research": {
-                    "timeframe": "June 2023 - December 2023",
-                    "role": "Research Assistant",
-                    "achievements": "Served as a Research Assistant in the Teacher Innovative Behavior Model Research Grant Activity"
-                },           
-                "Biro Bebras UC": {
-                    "timeframe": "March 2023 - October 2023",
-                    "role": "Student Assistant - Bebras Module Assistant",
-                    "achievements": "Work as an Student Assistant for Bebras. Assist the lecturer on learning module about 'Teknologi Informasi dan Komputer'"
-                }, 
-                "Universitas Ciputra Surabaya": {
-                    "timeframe": "February 2023 - January 2024",
-                    "role": "Programming Assistant Lecturer",
-                    "achievements": "Provided one-on-one support to students, helping them navigate challenges in their programming assignments."
-                }
-            }
-        },
-        "studies": {
-            "title": "Studies",
-            "institutions": {
-                "Universitas Ciputra Surabaya": {
-                    "description": "Studied informatics."
-                }
-            }
-        },
-        "technical": {
-            "title": "Technical skills",
-            "skills": {
-                "Python": {
-                    "description": "Able to implement a Deep Learning Model with the accuracy of 99.5% and publication in a Sinta-4-indexed journal"
-                },
-                "Swift": {
-                    "description": "Led and released 2 iOS app to the AppStore, including BillBro which has achieved 100 downloads with a 5 star rating"
-                },
-                "MySQL": {
-                    "description": "Database management for building websites and apps using MySql"
-                }
-            }
-        }
+  "person": {
+    "role": "Tech Developer & AI Enthusiast"
+  },
+  "home": {
+    "label": "Home",
+    "title": "Marsha's Portfolio",
+    "description": "Portfolio website showcasing my work as a Tech Developer & AI Enthusiast",
+    "headline": "Software Engineer focused on AI, iOS, and Scalable Tech Solutions",
+    "subline": "Hi, I'm Marsha — a tech developer passionate about building intelligent systems and user-centric apps. Currently a final-year Informatics student with real-world experience in AI, iOS, and full-stack development."
+  },
+  "about": {
+    "label": "About",
+    "title": "About Me",
+    "description": "Meet Marsha, a Tech Developer from Surabaya, Indonesia",
+    "intro": {
+      "title": "Introduction",
+      "description": "I am a Surabaya-based developer with a strong foundation in software engineering, specializing in artificial intelligence, iOS development, and backend systems. I'm eager to join forward-thinking teams to create impactful, scalable, and human-centric tech solutions."
     },
     "work": {
-        "label": "Work",
-        "title": "My projects",
-        "description": "Design and dev projects by {name}"
+      "title": "Work Experience",
+      "experiences": {
+        "IBM Watsonx Project SkillsBuild x Universitas Ciputra": {
+            "timeframe": "February 2025 – Present",
+            "role": "AI Developer (LLM & Computer Vision)",
+            "achievements": "In collaboration with Universitas Ciputra, developed and deployed an AI-powered platform (https://leafs-ai.vercel.app/) using IBM Watsonx Granite LLM. Implemented an image classification pipeline for leaf disease detection, and integrated a question-answering system using LLMs to provide contextual responses about detected diseases. The solution combines computer vision with large language models for enhanced user interaction and decision support."
+        },
+        "Appstore Bootcamp": {
+          "timeframe": "March 2025 - September 2025",
+          "role": "iOS Developer",
+          "achievements": "Chosen as a participant in the prestigious App Store Bootcamp, where I evolved my app *BillBro*—a smart bill-splitting tool—from concept to market. The program sharpened my skills in product marketing, App Store optimization (ASO), user onboarding, and UI/UX design. I successfully launched *BillBro* with key features like auto-split, multi-currency support, and intuitive summaries, backed by feedback-driven iteration cycles."
+        },
+        "PT Salam Pacific Indonesia Lines": {
+          "timeframe": "February 2025 - August 2025",
+          "role": "Artificial Intelligence Intern",
+          "achievements": "As an AI Intern, I delivered end-to-end solutions across mobile, backend, and AI. Highlights include OCR data extraction using Gemini API in a Flutter-based car management app, a lead time prediction ML model, and an auto-retraining image classification system for item checkout. I also helped develop JWT-based authentication and an intelligent chatbot for dangerous goods classification using LLaMA and RAG powered by ChromaDB."
+        },
+        "Apple Developer Academy @ UC": {
+          "timeframe": "March 2024 - December 2024",
+          "role": "iOS Developer",
+          "achievements": "Led the development and deployment of *ArchCalculator* and *BillBro* on the App Store. Combined technical expertise with design thinking principles to create highly-rated, user-friendly mobile applications focused on real-world utility."
+        },
+        "Teaching & Learning Innovation Center": {
+          "timeframe": "July 2023 - December 2023",
+          "role": "AI Researcher Intern",
+          "achievements": "Built innovative, AI-powered educational tools that boosted student engagement. Focused on applying NLP and adaptive learning algorithms for personalized learning content."
+        },
+        "Statistics and Probability Textbooks Using the Python Programming Language": {
+          "timeframe": "July 2023 - October 2023",
+          "role": "Research Assistant",
+          "achievements": "Assisted in authoring educational materials that taught statistical concepts using Python, contributing code examples and interactive problem sets."
+        },
+        "Teacher Innovative Behavior Model Research": {
+          "timeframe": "June 2023 - December 2023",
+          "role": "Research Assistant",
+          "achievements": "Contributed to a multidisciplinary research project exploring teacher innovation, applying computational analysis to behavioral survey data."
+        },
+        "Biro Bebras UC": {
+          "timeframe": "March 2023 - October 2023",
+          "role": "Student Assistant - Bebras Module Assistant",
+          "achievements": "Supported the creation and delivery of IT and computational thinking modules for the Bebras Indonesia initiative, reaching hundreds of students nationwide."
+        },
+        "Universitas Ciputra Surabaya": {
+          "timeframe": "February 2023 - January 2024",
+          "role": "Programming Assistant Lecturer",
+          "achievements": "Mentored junior students in programming fundamentals, object-oriented design, and mobile app development through hands-on guidance and code reviews."
+        }
+      }
     },
-    "projectCard": {
-        "label": "Read Case Study"
+    "studies": {
+      "title": "Education",
+      "institutions": {
+        "Universitas Ciputra Surabaya": {
+          "description": "B.Sc. in Informatics with a GPA of 3.84, actively involved in research and student leadership. Published in a SINTA-4 journal, completed thesis early, and served as a Student Assistant across multiple technical subjects."
+        }
+      }
+    },
+    "technical": {
+      "title": "Technical Skills",
+      "skills": {
+        "Python": {
+          "description": "Experienced in building deep learning models with 99.5% accuracy; published research in SINTA-4 journal."
+        },
+        "Swift": {
+          "description": "Developed and published 2 iOS apps to the App Store, including *BillBro* with 100+ downloads and 5-star user rating."
+        },
+        "Flutter & Dart": {
+          "description": "Built cross-platform mobile apps with backend integration (Golang) and advanced features like OCR and JWT authentication."
+        },
+        "Golang": {
+          "description": "Developed RESTful APIs, handled authentication with JWT, and integrated with AI pipelines and OCR systems."
+        },
+        "Flask": {
+          "description": "Deployed ML models as APIs, implemented image classification workflows and RAG-based chatbot backends."
+        },
+        "Laravel": {
+          "description": "Created full-stack web apps with Laravel, supporting AI integration and CRUD features for production systems."
+        },
+        "Machine Learning": {
+          "description": "Applied transfer learning, hyperparameter tuning, and auto-retraining workflows to production-ready models."
+        },
+        "NLP & LLM": {
+          "description": "Developed sentiment analysis using 5,000 labeled data points (neutral, positive, negative) with Gemini and OpenAI. Integrated OCR-based LLM extraction in BillBro for receipts and STNK documents. Built a Q&A system using IBM Watsonx Granite in a live web app (leafs-ai.vercel.app) for plant disease analysis through image classification and conversational AI."
+        },
+        "Computer Vision": {
+            "description": "Experienced in developing and deploying image classification systems using convolutional neural networks (CNNs) and MobileNet with transfer learning. Applied auto-retraining and hyperparameter tuning for real-time adaptation in item checkout and plant disease diagnosis use cases. Deployed production-ready models in projects such as BillBro and IBM Watsonx Leaf AI (leafs-ai.vercel.app)."
+        }
+      }
     }
+  },
+  "work": {
+    "label": "Work",
+    "title": "My Projects",
+    "description": "A selection of projects that showcase my development experience, innovation, and AI application"
+  },
+  "projectCard": {
+    "label": "Read Case Study"
+  }
 }
