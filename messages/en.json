@@ -43,7 +43,7 @@
         "Teaching & Learning Innovation Center": {
           "timeframe": "July 2023 - December 2023",
           "role": "AI Researcher Intern",
-          "achievements": "Built innovative, AI-powered educational tools that boosted student engagement. Focused on applying NLP and adaptive learning algorithms for personalized learning content."
+          "achievements": "Built innovative, educational tools that boosted student engagement."
         },
         "Statistics and Probability Textbooks Using the Python Programming Language": {
           "timeframe": "July 2023 - October 2023",
@@ -82,7 +82,7 @@
           "description": "Experienced in building deep learning models with 99.5% accuracy; published research in SINTA-4 journal."
         },
         "Swift": {
-          "description": "Developed and published 2 iOS apps to the App Store, including *BillBro* with 100+ downloads and 5-star user rating."
+          "description": "Developed and published 2 iOS apps to the App Store, including BillBro with 300+ downloads."
         },
         "Flutter & Dart": {
           "description": "Built cross-platform mobile apps with backend integration (Golang) and advanced features like OCR and JWT authentication."
@@ -97,10 +97,10 @@
           "description": "Created full-stack web apps with Laravel, supporting AI integration and CRUD features for production systems."
         },
         "Machine Learning": {
-          "description": "Applied transfer learning, hyperparameter tuning, and auto-retraining workflows to production-ready models."
+          "description": "Applied hyperparameter tuning to models to improve accuracy."
         },
         "NLP & LLM": {
-          "description": "Developed sentiment analysis using 5,000 labeled data points (neutral, positive, negative) with Gemini and OpenAI. Integrated OCR-based LLM extraction in BillBro for receipts and STNK documents. Built a Q&A system using IBM Watsonx Granite in a live web app (leafs-ai.vercel.app) for plant disease analysis through image classification and conversational AI."
+          "description": "Developed sentiment analysis using 5,000 labeled data points (neutral, positive, negative). Integrated OCR-based LLM extraction in BillBro for receipts and STNK documents with Gemini. Built a Q&A system using IBM Watsonx Granite in a live web app (leafs-ai.vercel.app) for plant disease analysis through image classification and conversational AI."
         },
         "Computer Vision": {
             "description": "Experienced in developing and deploying image classification systems using convolutional neural networks (CNNs) and MobileNet with transfer learning. Applied auto-retraining and hyperparameter tuning for real-time adaptation in item checkout and plant disease diagnosis use cases. Deployed production-ready models in projects such as BillBro and IBM Watsonx Leaf AI (leafs-ai.vercel.app)."
