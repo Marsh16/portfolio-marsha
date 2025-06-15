@@ -81,6 +81,19 @@ const createContent = (t) => {
           images: [],
         },
         {
+          company: "Appstore Bootcamp",
+          timeframe: t(
+            "about.work.experiences.Appstore Bootcamp.timeframe"
+          ),
+          role: t(
+            "about.work.experiences.Appstore Bootcamp.role"
+          ),
+          achievements: t(
+            "about.work.experiences.Appstore Bootcamp.achievements"
+          ).split(";"),
+          images: [],
+        },
+        {
           company: "PT Salam Pacific Indonesia Lines",
           timeframe: t(
             "about.work.experiences.PT Salam Pacific Indonesia Lines.timeframe"
