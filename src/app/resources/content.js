@@ -9,13 +9,11 @@ const createContent = (t) => {
         },
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        location:  'Asia/Jakarta',
+        languages: ['English', 'Bahasa']
     }
 
     const social = [
-        // Links are automatically displayed.
-        // Import new icons in /once-ui/icons.ts
         {
             name: 'GitHub',
             icon: 'github',
@@ -62,23 +60,29 @@ const createContent = (t) => {
             description: <>{t("about.intro.description")}</>
         },
         work: {
-            display: true, // set to false to hide this section
+            display: true,
             title: t("about.work.title"),
             experiences: [
+                {
+                    company: 'IBM Watsonx Project SkillsBuild x Universitas Ciputra',
+                    timeframe: t("about.work.experiences.IBM Watsonx Project SkillsBuild x Universitas Ciputra.timeframe"),
+                    role: t("about.work.experiences.IBM Watsonx Project SkillsBuild x Universitas Ciputra.role"),
+                    achievements: t("about.work.experiences.IBM Watsonx Project SkillsBuild x Universitas Ciputra.achievements").split(";"),
+                    images: []
+                },
                 {
                     company: 'PT Salam Pacific Indonesia Lines',
                     timeframe: t("about.work.experiences.PT Salam Pacific Indonesia Lines.timeframe"),
                     role: t("about.work.experiences.PT Salam Pacific Indonesia Lines.role"),
                     achievements: t("about.work.experiences.PT Salam Pacific Indonesia Lines.achievements").split(";"),
-                    images: [ // optional: leave the array empty if you don't want to display images
-                    ]
+                    images: []
                 },
                 {
                     company: 'Apple Developer Academy @ UC',
                     timeframe: t("about.work.experiences.Apple Developer Academy @ UC.timeframe"),
                     role: t("about.work.experiences.Apple Developer Academy @ UC.role"),
                     achievements: t("about.work.experiences.Apple Developer Academy @ UC.achievements").split(";"),
-                    images: [ // optional: leave the array empty if you don't want to display images
+                    images: [
                         {
                             src: '/images/projects/project-01/certificate-apple.jpeg',
                             alt: 'Project',
@@ -110,28 +114,14 @@ const createContent = (t) => {
                     timeframe: t("about.work.experiences.Teaching & Learning Innovation Center.timeframe"),
                     role: t("about.work.experiences.Teaching & Learning Innovation Center.role"),
                     achievements: t("about.work.experiences.Teaching & Learning Innovation Center.achievements").split(";"),
-                    images: [ ]
+                    images: []
                 },
-                // {
-                //     company: 'Statistics and Probability Textbooks Using the Python Programming Language',
-                //     timeframe: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.timeframe"),
-                //     role: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.role"),
-                //     achievements: t("about.work.experiences.Statistics and Probability Textbooks Using the Python Programming Language.achievements").split(";"),
-                //     images: [ ]
-                // },  
-                // {
-                //     company: 'Teacher Innovative Behavior Model Research',
-                //     timeframe: t("about.work.experiences.Teacher Innovative Behavior Model Research.timeframe"),
-                //     role: t("about.work.experiences.Teacher Innovative Behavior Model Research.role"),
-                //     achievements: t("about.work.experiences.Teacher Innovative Behavior Model Research.achievements").split(";"),
-                //     images: [ ]
-                // },
                 {
                     company: 'Biro Bebras UC',
                     timeframe: t("about.work.experiences.Biro Bebras UC.timeframe"),
                     role: t("about.work.experiences.Biro Bebras UC.role"),
                     achievements: t("about.work.experiences.Biro Bebras UC.achievements").split(";"),
-                    images: [ 
+                    images: [
                         {
                             src: '/images/projects/project-01/experiences/bebras.png',
                             alt: 'Project',
@@ -145,12 +135,12 @@ const createContent = (t) => {
                     timeframe: t("about.work.experiences.Universitas Ciputra Surabaya.timeframe"),
                     role: t("about.work.experiences.Universitas Ciputra Surabaya.role"),
                     achievements: t("about.work.experiences.Universitas Ciputra Surabaya.achievements").split(";"),
-                    images: [ ]
+                    images: []
                 }
             ]
         },
         studies: {
-            display: true, // set to false to hide this section
+            display: true,
             title: 'Studies',
             institutions: [
                 {
@@ -160,7 +150,7 @@ const createContent = (t) => {
             ]
         },
         technical: {
-            display: true, // set to false to hide this section
+            display: true,
             title: t("about.technical.title"),
             skills: [
                 {
@@ -177,7 +167,7 @@ const createContent = (t) => {
                 },
                 {
                     title: 'Swift',
-                    description: <>{t("about.technical.skills.Swift.description")}</>, // "." not accepted in next-intl namespace
+                    description: <>{t("about.technical.skills.Swift.description")}</>,
                     images: [
                         {
                             src: '/images/projects/project-01/swift.png',
@@ -187,6 +177,30 @@ const createContent = (t) => {
                         },
                     ]
                 },
+                {
+                    title: 'NLP & LLM',
+                    description: <>{t("about.technical.skills.NLP & LLM.description")}</>
+                },
+                {
+                    title: 'Computer Vision',
+                    description: <>{t("about.technical.skills.Computer Vision.description")}</>
+                },
+                {
+                    title: 'Flutter & Dart',
+                    description: <>Built cross-platform mobile apps with backend integration (Golang) and advanced features like OCR and JWT authentication.</>
+                },
+                {
+                    title: 'Golang',
+                    description: <>Developed RESTful APIs, handled authentication with JWT, and integrated with AI pipelines and OCR systems.</>
+                },
+                {
+                    title: 'Flask',
+                    description: <>Deployed ML models as APIs, implemented image classification workflows and backends.</>
+                },
+                {
+                    title: 'Laravel',
+                    description: <>Created full-stack web apps with Laravel, supporting AI integration and CRUD features for production systems.</>
+                }
             ]
         }
     }
@@ -195,8 +209,6 @@ const createContent = (t) => {
         label: t("work.label"),
         title: t("work.title"),
         description: t("work.description", {name: person.name})
-        // Create new project pages by adding a new .mdx file to app/blog/posts
-        // All projects will be listed on the /home and /work routes
     }
     return {
         person,

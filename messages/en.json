@@ -33,7 +33,7 @@
         "PT Salam Pacific Indonesia Lines": {
           "timeframe": "February 2025 - August 2025",
           "role": "Artificial Intelligence Intern",
-          "achievements": "As an AI Intern, I delivered end-to-end solutions across mobile, backend, and AI. Highlights include OCR data extraction using Gemini API in a Flutter-based car management app, a lead time prediction ML model, and an auto-retraining image classification system for item checkout. I also helped develop JWT-based authentication and an intelligent chatbot for dangerous goods classification using LLaMA and RAG powered by ChromaDB."
+          "achievements": "As an AI Intern, I delivered end-to-end solutions across mobile, backend, and AI. Highlights include OCR data extraction using Gemini API in a Flutter-based car management app, a lead time prediction ML model, and an auto-retraining image classification system for item checkout. I also helped develop JWT-based authentication."
         },
         "Apple Developer Academy @ UC": {
           "timeframe": "March 2024 - December 2024",
@@ -91,7 +91,7 @@
           "description": "Developed RESTful APIs, handled authentication with JWT, and integrated with AI pipelines and OCR systems."
         },
         "Flask": {
-          "description": "Deployed ML models as APIs, implemented image classification workflows and RAG-based chatbot backends."
+          "description": "Deployed ML models as APIs, implemented image classification workflows and backends."
         },
         "Laravel": {
           "description": "Created full-stack web apps with Laravel, supporting AI integration and CRUD features for production systems."
