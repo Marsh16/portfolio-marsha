@@ -255,95 +255,128 @@ const createContent = (t) => {
     technical: {
       display: true,
       title: t("about.technical.title"),
-      skills: [
-        {
-          title: "Python",
-          description: <>{t("about.technical.skills.Python.description")}</>,
-          images: [
-            {
-              src: "/images/projects/project-01/python.png",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          title: "Swift",
-          description: <>{t("about.technical.skills.Swift.description")}</>,
-          images: [
-            {
-              src: "/images/projects/project-01/swift.png",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          title: "NLP & LLM",
-          description: <>{t("about.technical.skills.NLP & LLM.description")}</>,
-        },
-        {
-          title: "Computer Vision",
-          description: (
-            <>{t("about.technical.skills.Computer Vision.description")}</>
-          ),
-        },
-        {
-          title: "Flutter & Dart",
-          description: (
-            <>
-              Built cross-platform mobile apps with backend integration (Golang)
-              and advanced features like OCR and JWT authentication.
-            </>
-          ),
-        },
-        {
-          title: "Golang",
-          description: (
-            <>
-              Developed RESTful APIs, handled authentication with JWT, and
-              integrated with AI pipelines and OCR systems.
-            </>
-          ),
-        },
-        {
-          title: "Flask",
-          description: (
-            <>
-              Deployed ML models as APIs, implemented image classification
-              workflows and backends.
-            </>
-          ),
-        },
-        {
-          title: "Laravel",
-          description: (
-            <>
-              Created full-stack web apps with Laravel, supporting AI
-              integration and CRUD features for production systems.
-            </>
-          ),
-        },
-        {
-          title: "SAP Learning",
-          description: (
-            <>
-              Completed the{" "}
-              <InlineCode>Delta Content ABAP Developer</InlineCode> module.
-              Currently progressing through
-              <InlineCode>
-                SAP Learning Journey: Practicing Clean Core Extensibility For
-                SAP S/4HANA Cloud
-              </InlineCode>{" "}
-              and
-              <InlineCode>Managing Clean Core for SAP S/4HANA Cloud</InlineCode>
-              , consisting of 5 units (~8 hours total) to earn certification.
-            </>
-          ),
-        },
-      ],
+      categories: {
+        "Programming Languages": [
+          {
+            title: "Python",
+            description: <>{t("about.technical.categories.Programming Languages.Python.description")}</>,
+            images: [
+              {
+                src: "/images/projects/project-01/python.png",
+                alt: "Python Projects",
+                width: 16,
+                height: 9,
+              },
+            ],
+          },
+          {
+            title: "Swift",
+            description: <>{t("about.technical.categories.Programming Languages.Swift.description")}</>,
+            images: [
+              {
+                src: "/images/projects/project-01/swift.png",
+                alt: "Swift Projects",
+                width: 16,
+                height: 9,
+              },
+            ],
+          },
+          {
+            title: "JavaScript & TypeScript",
+            description: <>{t("about.technical.categories.Programming Languages.JavaScript & TypeScript.description")}</>,
+          },
+          {
+            title: "Dart & Flutter",
+            description: <>{t("about.technical.categories.Programming Languages.Dart & Flutter.description")}</>,
+          },
+          {
+            title: "Go (Golang)",
+            description: <>{t("about.technical.categories.Programming Languages.Go (Golang).description")}</>,
+          },
+          {
+            title: "PHP",
+            description: <>{t("about.technical.categories.Programming Languages.PHP.description")}</>,
+          },
+        ],
+        "AI & Machine Learning": [
+          {
+            title: "Deep Learning & Computer Vision",
+            description: <>{t("about.technical.categories.AI & Machine Learning.Deep Learning & Computer Vision.description")}</>,
+          },
+          {
+            title: "Natural Language Processing & LLMs",
+            description: <>{t("about.technical.categories.AI & Machine Learning.Natural Language Processing & LLMs.description")}</>,
+          },
+          {
+            title: "Machine Learning Operations",
+            description: <>{t("about.technical.categories.AI & Machine Learning.Machine Learning Operations.description")}</>,
+          },
+          {
+            title: "AI Integration & APIs",
+            description: <>{t("about.technical.categories.AI & Machine Learning.AI Integration & APIs.description")}</>,
+          },
+        ],
+        "Mobile Development": [
+          {
+            title: "iOS Development",
+            description: <>{t("about.technical.categories.Mobile Development.iOS Development.description")}</>,
+          },
+          {
+            title: "Cross-Platform Development",
+            description: <>{t("about.technical.categories.Mobile Development.Cross-Platform Development.description")}</>,
+          },
+          {
+            title: "Mobile Backend Integration",
+            description: <>{t("about.technical.categories.Mobile Development.Mobile Backend Integration.description")}</>,
+          },
+        ],
+        "Web Development": [
+          {
+            title: "Frontend Frameworks",
+            description: <>{t("about.technical.categories.Web Development.Frontend Frameworks.description")}</>,
+          },
+          {
+            title: "Backend Development",
+            description: <>{t("about.technical.categories.Web Development.Backend Development.description")}</>,
+          },
+          {
+            title: "Styling & UI/UX",
+            description: <>{t("about.technical.categories.Web Development.Styling & UI/UX.description")}</>,
+          },
+        ],
+        "Databases & Cloud": [
+          {
+            title: "Database Management",
+            description: <>{t("about.technical.categories.Databases & Cloud.Database Management.description")}</>,
+          },
+          {
+            title: "Cloud Platforms & Deployment",
+            description: <>{t("about.technical.categories.Databases & Cloud.Cloud Platforms & Deployment.description")}</>,
+          },
+          {
+            title: "Authentication & Security",
+            description: <>{t("about.technical.categories.Databases & Cloud.Authentication & Security.description")}</>,
+          },
+        ],
+        "Specialized Technologies": [
+          {
+            title: "Workflow Automation",
+            description: <>{t("about.technical.categories.Specialized Technologies.Workflow Automation.description")}</>,
+          },
+          {
+            title: "Payment Integration",
+            description: <>{t("about.technical.categories.Specialized Technologies.Payment Integration.description")}</>,
+          },
+          {
+            title: "OCR & Document Processing",
+            description: <>{t("about.technical.categories.Specialized Technologies.OCR & Document Processing.description")}</>,
+          },
+          {
+            title: "Game Development",
+            description: <>{t("about.technical.categories.Specialized Technologies.Game Development.description")}</>,
+          },
+        ],
+      },
     },
   };
 

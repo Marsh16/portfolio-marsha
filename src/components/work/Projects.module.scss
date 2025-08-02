@@ -15,3 +15,42 @@
     left: -2rem;
     transition: var(--transition-micro-medium);
 }
+
+.categorySection {
+    border-radius: var(--radius-l);
+    border: 1px solid var(--neutral-border-weak);
+    padding: var(--static-space-24);
+    background: var(--neutral-background-weak);
+    transition: var(--transition-micro-medium);
+
+    &:hover {
+        border-color: var(--neutral-border-medium);
+        background: var(--neutral-background-medium);
+    }
+}
+
+.categoryHeader {
+    border-bottom: 1px solid var(--neutral-border-weak);
+    padding-bottom: var(--static-space-16);
+    margin-bottom: var(--static-space-24);
+}
+
+.categoryTitle {
+    display: flex;
+    align-items: center;
+    gap: var(--static-space-12);
+
+    &::before {
+        content: '';
+        width: 4px;
+        height: 24px;
+        border-radius: 2px;
+        background: var(--accent-solid-strong);
+    }
+}
+
+.aiCategory::before { background: var(--brand-solid-strong); }
+.iosCategory::before { background: var(--accent-solid-strong); }
+.fullstackCategory::before { background: var(--success-solid-strong); }
+.reactCategory::before { background: var(--warning-solid-strong); }
+.otherCategory::before { background: var(--neutral-solid-strong); }

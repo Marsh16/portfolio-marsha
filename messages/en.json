@@ -1,18 +1,18 @@
 {
   "person": {
-    "role": "Tech Developer & AI Enthusiast"
+    "role": "Software Engineer & AI Enthusiast"
   },
   "home": {
     "label": "Home",
     "title": "Marsha's Portfolio",
-    "description": "Portfolio website showcasing my work as a Tech Developer & AI Enthusiast",
+    "description": "Portfolio website showcasing my work as a Software Engineer & AI Enthusiast",
     "headline": "Software Engineer focused on AI, iOS, and Scalable Tech Solutions",
-    "subline": "Hi, I'm Marsha — a tech developer passionate about building intelligent systems and user-centric apps. Currently a final-year Informatics student with real-world experience in AI, iOS, and full-stack development."
+    "subline": "Hi, I'm Marsha — a Software Engineer passionate about building intelligent systems and user-centric apps. Currently a Software Engineer with real-world experience in AI, iOS, and full-stack development."
   },
   "about": {
     "label": "About",
     "title": "About Me",
-    "description": "Meet Marsha, a Tech Developer from Surabaya, Indonesia",
+    "description": "Meet Marsha, a Software Engineer from Surabaya, Indonesia",
     "intro": {
       "title": "Introduction",
       "description": "I am a Surabaya-based developer with a strong foundation in software engineering, specializing in artificial intelligence, iOS development, and backend systems. I'm eager to join forward-thinking teams to create impactful, scalable, and human-centric tech solutions."
@@ -21,19 +21,19 @@
       "title": "Work Experience",
       "experiences": {
         "IBM Watsonx Project SkillsBuild x Universitas Ciputra": {
-            "timeframe": "February 2025 – Present",
+            "timeframe": "February 2025 – August 2025",
             "role": "AI Developer (LLM & Computer Vision)",
             "achievements": "In collaboration with Universitas Ciputra, developed and deployed an AI-powered platform (https://leafs-ai.vercel.app/) using IBM Watsonx Granite LLM. Implemented an image classification pipeline for leaf disease detection, and integrated a question-answering system using LLMs to provide contextual responses about detected diseases. The solution combines computer vision with large language models for enhanced user interaction and decision support."
         },
         "Appstore Bootcamp": {
-          "timeframe": "March 2025 - September 2025",
+          "timeframe": "March 2025 - August 2025",
           "role": "iOS Developer",
           "achievements": "Chosen as a participant in the prestigious App Store Bootcamp, where I evolved my app *BillBro*—a smart bill-splitting tool—from concept to market. The program sharpened my skills in product marketing, App Store optimization (ASO), user onboarding, and UI/UX design. I successfully launched *BillBro* with key features like auto-split, multi-currency support, and intuitive summaries, backed by feedback-driven iteration cycles."
         },
         "PT Salam Pacific Indonesia Lines": {
           "timeframe": "February 2025 - August 2025",
           "role": "Artificial Intelligence Intern",
-          "achievements": "As an AI Intern, I delivered end-to-end solutions across mobile, backend, and AI. Highlights include OCR data extraction using Gemini API in a Flutter-based car management app, a lead time prediction ML model, and an auto-retraining image classification system for item checkout. I also helped develop JWT-based authentication."
+          "achievements": "As an AI Intern at PT SPIL, I built end-to-end solutions across mobile, web, backend, and AI. I developed OCR features using the Gemini API in a Flutter app for vehicle document extraction (e.g., STNK, invoices), and trained a lead time prediction model with Python and scikit-learn. I also created a self-retraining image classification system for item checkout, containerized with Docker for scalable deployment. On the frontend, I built internal dashboards using React and Next.js, and supported Laravel-based services with JWT auth. I also experimented with LLMs (Gemini, Gemma) for document Q&A and OCR validation. This internship sharpened my skills in AI deployment, full-stack dev, and ML/LLM integration."
         },
         "Apple Developer Academy @ UC": {
           "timeframe": "March 2024 - December 2024",
@@ -71,39 +71,93 @@
       "title": "Education",
       "institutions": {
         "Universitas Ciputra Surabaya": {
-          "description": "S.Kom. in Informatics with a GPA of 3.84, actively involved in research and student leadership. Published in a SINTA-4 journal, completed thesis early, and served as a Student Assistant across multiple technical subjects."
+          "description": "Student Union, Apple Developer Academy — Active in the Informatics Student Union (2022–2024), from member to coordinator. Served as Student Assistant for OOP and Mobile Development. Contributed to research projects, including a national Bebras initiative and interdisciplinary studies, with a SINTA-4 journal publication. Completed thesis early (7th semester). Interned at Apple Developer Academy (iOS), PT SPIL (AI), and UC Teaching & Learning Center. Graduated with a GPA of 3.85."
         }
       }
     },
     "technical": {
       "title": "Technical Skills",
-      "skills": {
-        "Python": {
-          "description": "Experienced in building deep learning models with 99.5% accuracy; published research in SINTA-4 journal."
+      "categories": {
+        "Programming Languages": {
+          "Python": {
+            "description": "Advanced proficiency in Python for AI/ML development. Built DenseNet model achieving 99.5% accuracy for mango leaf disease classification, published in SINTA-4 journal. Developed HealthSignal app using TensorFlow Lite, Random Forest, and Neural Networks for health prediction. Implemented data preprocessing with CLAHE and transfer learning techniques."
+          },
+          "Swift": {
+            "description": "Expert iOS developer with 4+ published App Store applications. Developed BillBro (500+ downloads) with SwiftUI, SwiftData, OCR integration, and push notifications. Created ArchCalculator for structural calculations, DogMitch with Firebase integration, and Brantas River game using SceneKit, GameplayKit, and Core Motion. Proficient in WidgetKit, PDFKit, Core Haptics, and Apple ecosystem integration."
+          },
+          "JavaScript & TypeScript": {
+            "description": "Full-stack JavaScript development with TypeScript for type safety. Built MyIM marketplace with React 18, TypeScript, and Vite. Developed LeafsAI frontend with Next.js and backend APIs with Node.js/Express. Created APAR Monitor with React.js and real-time Firebase integration. Experienced in modern ES6+ features, async/await, and functional programming patterns."
+          },
+          "Dart & Flutter": {
+            "description": "Cross-platform mobile development with advanced Flutter features. Built car management app with OCR data extraction using Gemini API, automatic document reading for STNK and invoices. Implemented JWT authentication, real-time data synchronization, and backend integration with Golang APIs. Proficient in state management, custom widgets, and platform-specific integrations."
+          },
+          "Go (Golang)": {
+            "description": "Backend API development with Go for high-performance systems. Developed RESTful APIs with JWT authentication, integrated AI pipelines for OCR processing, and built microservices for mobile app backends. Experienced in goroutines, channels, and concurrent programming patterns for scalable applications."
+          },
+          "PHP": {
+            "description": "Full-stack web development with Laravel framework. Created production web applications with AI integration, CRUD operations, and database management. Built internal dashboards for ML model testing and monitoring, implemented role-based authentication, and developed API endpoints for mobile app integration."
+          }
         },
-        "Swift": {
-          "description": "Developed and published 2 iOS apps to the App Store, including BillBro with 300+ downloads."
+        "AI & Machine Learning": {
+          "Deep Learning & Computer Vision": {
+            "description": "Expert in CNN architectures including DenseNet121, MobileNet with transfer learning. Achieved 99.5% accuracy in plant disease classification using TensorFlow/Keras. Implemented CLAHE preprocessing, data augmentation, and SGD optimization. "
+          },
+          "Natural Language Processing & LLMs": {
+            "description": "Advanced LLM integration and NLP applications. Developed sentiment analysis with 5,000 labeled datasets. Integrated IBM Watsonx Granite for Q&A systems in LeafsAI (leafs-ai.vercel.app). Built GPT-4.1 powered WhatsApp chatbot with n8n automation. Implemented OCR-to-LLM pipelines for document processing in BillBro and STNK reading systems."
+          },
+          "Machine Learning Operations": {
+            "description": "End-to-end ML pipeline development from data preprocessing to production deployment. Applied hyperparameter tuning with Grid-Search and Random-Search. Implemented model evaluation with accuracy, precision, recall, F1-score metrics.  Experienced in TensorFlow Lite for mobile deployment and model optimization."
+          },
+          "AI Integration & APIs": {
+            "description": "Production AI system integration with cloud services. Integrated IBM Watsonx for enterprise AI solutions, Gemini API for OCR and document processing, OpenAI GPT-4.1 for conversational AI. Built Flask APIs for ML model serving, implemented real-time inference systems, and created AI-powered automation workflows with n8n."
+          }
         },
-        "Flutter & Dart": {
-          "description": "Built cross-platform mobile apps with backend integration (Golang) and advanced features like OCR and JWT authentication."
+        "Mobile Development": {
+          "iOS Development": {
+            "description": "Native iOS development with SwiftUI and UIKit. Published 4+ apps to App Store including BillBro (500+ downloads), ArchCalculator, DogMitch, and Brantas River. Implemented advanced features: SwiftData for local storage, WidgetKit for home screen widgets, Core Motion for game controls, SceneKit for 3D environments, PDFKit for document generation, and Core Haptics for user feedback."
+          },
+          "Cross-Platform Development": {
+            "description": "Flutter development for iOS and Android with native performance. Built car management systems with camera integration, OCR processing, and real-time data sync. Implemented platform channels for native functionality, state management with Provider/Bloc, and custom UI components. Integrated with backend APIs and third-party services."
+          },
+          "Mobile Backend Integration": {
+            "description": "Comprehensive mobile backend solutions with Firebase, Supabase, and custom APIs. Implemented real-time databases, push notifications with OneSignal, authentication systems, file storage, and offline-first architectures. Built RESTful APIs with Go and Node.js for mobile app backends with JWT security and role-based access control."
+          }
         },
-        "Golang": {
-          "description": "Developed RESTful APIs, handled authentication with JWT, and integrated with AI pipelines and OCR systems."
+        "Web Development": {
+          "Frontend Frameworks": {
+            "description": "Modern React ecosystem development with Next.js, TypeScript, and Vite. Built LeafsAI with Next.js and Tailwind CSS, MyIM marketplace with React 18 and TypeScript, APAR Monitor with responsive design. Implemented PWA features, canvas-based editors, real-time updates, and optimized performance with code splitting and lazy loading."
+          },
+          "Backend Development": {
+            "description": "Full-stack backend systems with Node.js, Express, Laravel, and Flask. Developed APIs for AI model serving, payment processing with Xendit, workflow automation with n8n. Implemented CRUD operations, database management, and microservices architecture with Docker containerization."
+          },
+          "Styling & UI/UX": {
+            "description": "Modern CSS frameworks and design systems. Proficient in Tailwind CSS for utility-first styling, responsive design principles, and component-based architecture. Created clean, accessible interfaces with consistent design patterns, dark/light mode support, and mobile-first responsive layouts."
+          }
         },
-        "Flask": {
-          "description": "Deployed ML models as APIs, implemented image classification workflows and backends."
+        "Databases & Cloud": {
+          "Database Management": {
+            "description": "Multi-database expertise with PostgreSQL, Firebase Firestore, and Supabase. Implemented Row Level Security (RLS) policies, stored procedures, triggers, and real-time subscriptions. Designed scalable database schemas for e-commerce, messaging platforms, and AI applications with optimized queries and indexing strategies."
+          },
+          "Cloud Platforms & Deployment": {
+            "description": "Production deployment experience with Vercel, IBM Cloud, Firebase Hosting, and Sumopod. Containerized applications with Docker, implemented CI/CD pipelines, and managed cloud infrastructure. Deployed ML models to cloud platforms, configured auto-scaling, and monitored application performance in production environments."
+          },
+          "Authentication & Security": {
+            "description": "Comprehensive security implementation with JWT authentication, OAuth integration, and role-based access control. Implemented Supabase Auth with email OTP, Firebase Authentication, and custom authentication systems. "
+          }
         },
-        "Laravel": {
-          "description": "Created full-stack web apps with Laravel, supporting AI integration and CRUD features for production systems."
-        },
-        "Machine Learning": {
-          "description": "Applied hyperparameter tuning to models to improve accuracy."
-        },
-        "NLP & LLM": {
-          "description": "Developed sentiment analysis using 5,000 labeled data points (neutral, positive, negative). Integrated OCR-based LLM extraction in BillBro for receipts and STNK documents with Gemini. Built a Q&A system using IBM Watsonx Granite in a live web app (leafs-ai.vercel.app) for plant disease analysis through image classification and conversational AI."
-        },
-        "Computer Vision": {
-            "description": "Experienced in developing and deploying image classification systems using convolutional neural networks (CNNs) and MobileNet with transfer learning. Applied auto-retraining and hyperparameter tuning for real-time adaptation in item checkout and plant disease diagnosis use cases. Deployed production-ready models in projects such as BillBro and IBM Watsonx Leaf AI (leafs-ai.vercel.app)."
+        "Specialized Technologies": {
+          "Workflow Automation": {
+            "description": "Advanced n8n workflow automation for business process optimization. Built WhatsApp chatbot with multi-service orchestration, Google Workspace integration (Gmail, Calendar, Sheets), and payment processing automation. Created complex workflows for customer service, reservation systems, and document management with error handling and monitoring."
+          },
+          "Payment Integration": {
+            "description": "E-commerce payment system integration with Xendit Indonesian payment gateway. Implemented secure payment processing, transaction monitoring, webhook handling, and multi-currency support. Built complete payment flows with order management, invoice generation, and automated confirmation systems."
+          },
+          "OCR & Document Processing": {
+            "description": "Advanced OCR implementation using Gemini API for document digitization. Built systems for automatic STNK reading, receipt processing in BillBro, and invoice data extraction. Implemented image preprocessing, text extraction validation, and LLM-enhanced OCR output verification for improved accuracy."
+          },
+          "Game Development": {
+            "description": "iOS game development with SceneKit, GameplayKit, and Core Motion. Created Brantas River endless runner with 3D environments using Blender for asset creation. Implemented ECS architecture with GameplayKit, motion sensor controls, physics simulation, audio integration, and haptic feedback for immersive gaming experiences."
+          }
         }
       }
     }

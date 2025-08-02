@@ -84,7 +84,7 @@ export default function About({
     {
       title: about.technical.title,
       display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      items: Object.keys(about.technical.categories || {}),
     },
   ];
   return (
@@ -407,43 +407,58 @@ export default function About({
               >
                 {about.technical.title}
               </Heading>
-              <Flex direction="column" fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Flex
-                    key={`${skill}-${index}`}
-                    fillWidth
-                    gap="4"
-                    direction="column"
-                  >
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text
-                      variant="body-default-m"
-                      onBackground="neutral-weak"
+              <Flex direction="column" fillWidth gap="xl">
+                {Object.entries(about.technical.categories || {}).map(([categoryName, skills]: [string, any[]]) => (
+                  <Flex key={categoryName} direction="column" fillWidth gap="l">
+                    <Heading
+                      as="h3"
+                      variant="heading-strong-l"
+                      marginBottom="m"
+                      onBackground="brand-strong"
                     >
-                      {skill.description}
-                    </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            borderStyle="solid-1"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
+                      {categoryName}
+                    </Heading>
+                    <Flex direction="column" fillWidth gap="l">
+                      {skills.map((skill, index) => (
+                        <Flex
+                          key={`${skill.title}-${index}`}
+                          fillWidth
+                          gap="4"
+                          direction="column"
+                          paddingLeft="m"
+                        >
+                          <Text variant="heading-strong-m">{skill.title}</Text>
+                          <Text
+                            variant="body-default-m"
+                            onBackground="neutral-weak"
                           >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
+                            {skill.description}
+                          </Text>
+                          {skill.images && skill.images.length > 0 && (
+                            <Flex fillWidth paddingTop="m" gap="12" wrap>
+                              {skill.images.map((image, index) => (
+                                <Flex
+                                  key={index}
+                                  border="neutral-medium"
+                                  borderStyle="solid-1"
+                                  radius="m"
+                                  minWidth={image.width}
+                                  height={image.height}
+                                >
+                                  <SmartImage
+                                    enlarge
+                                    radius="m"
+                                    sizes={image.width.toString()}
+                                    alt={image.alt}
+                                    src={image.src}
+                                  />
+                                </Flex>
+                              ))}
+                            </Flex>
+                          )}
+                        </Flex>
+                      ))}
+                    </Flex>
                   </Flex>
                 ))}
               </Flex>
