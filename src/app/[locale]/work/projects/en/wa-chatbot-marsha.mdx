@@ -1,0 +1,103 @@
+---
+title: "WA Chatbot Marsha"
+publishedAt: "2025-01-08"
+summary: "An intelligent WhatsApp chatbot built with n8n workflow automation, AI integration, and multi-service orchestration for Toko Marsha's customer service automation"
+images:
+  - "/images/projects/project-05/n8n-workflow.png"
+  - "/images/projects/project-05/chatbot-demo.png"
+  - "/images/projects/project-05/reservation-flow.png"
+team:
+  - name: "Marsha Alexis Likorawung"
+    role: "Full-Stack Developer, AI Integration Specialist"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/marsha-alexis-likorawung-16b13a267/"
+---
+
+## Overview
+
+WA Chatbot Marsha is an intelligent customer service automation solution built for Toko Marsha, demonstrating advanced integration of workflow automation, artificial intelligence, and multi-platform deployment. This project showcases the power of no-code/low-code solutions combined with sophisticated backend orchestration to create a seamless customer experience.
+
+The chatbot handles three core business functions: store reservations with automated calendar integration, product catalog distribution, and intelligent FAQ responses. Built using n8n for workflow automation, GPT-4.1 for natural language processing, and deployed using modern containerization with Supabase and WAHA, this project represents a complete end-to-end automation solution.
+
+## Key Features
+
+### Intelligent Reservation System
+- **Automated Booking Flow**: Customers initiate reservations through natural conversation
+- **Form Integration**: Seamless handoff to structured reservation forms
+- **Email Confirmation**: Automated confirmation emails sent upon successful booking
+- **Calendar Sync**: Real-time integration with Google Calendar for schedule management
+- **Conflict Prevention**: Smart scheduling to avoid double-bookings
+
+### Dynamic Product Catalog
+- **On-Demand Delivery**: PDF catalog automatically sent when customers inquire about products
+- **Context-Aware Responses**: AI determines when to trigger product information sharing
+- **Document Management**: Centralized product catalog with easy updates
+- **Rich Media Support**: Support for images, descriptions, and pricing information
+
+### AI-Powered FAQ System
+- **Natural Language Understanding**: GPT-4.1 processes customer queries in conversational language
+- **Business Hours Information**: Automated responses for store hours and contact details
+- **Product Inquiries**: Intelligent routing between general info and detailed catalog
+- **Contextual Responses**: Maintains conversation context for multi-turn interactions
+
+### Enterprise Integration
+- **Google Workspace**: Full integration with Gmail, Calendar, and Sheets
+- **WhatsApp Business API**: Professional messaging with WAHA container deployment
+- **n8n Orchestration**: Visual workflow automation with error handling and monitoring
+
+## Technologies Used
+
+- **Workflow Automation**: n8n for visual workflow design and execution
+- **AI Integration**: OpenAI GPT-4.1 for natural language processing and response generation
+- **Messaging Platform**: WhatsApp Business API via WAHA (WhatsApp HTTP API) container
+- **Cloud Integration**: Google Workspace APIs (Gmail, Calendar, Sheets)
+- **Deployment**: Sumopod, containerized n8n and WAHA deployment
+- **Document Management**: File sending
+- **Email Automation**: SMTP integration for confirmation emails
+
+## Tech Stack
+
+- **Automation Platform**: n8n (Node-based workflow automation)
+- **AI/ML**: OpenAI GPT-4.1 API
+- **Messaging**: WAHA (WhatsApp HTTP API) Container
+- **Integration**: Google APIs (Calendar, Gmail, Sheets)
+- **Deployment**: Sumopod, Docker containers
+
+## Architecture Highlights
+
+### Microservices Design
+The solution employs a microservices architecture where each component handles specific business logic:
+- **Message Router**: Processes incoming WhatsApp messages and determines intent
+- **AI Processor**: Handles natural language understanding and response generation
+- **Reservation Engine**: Manages booking logic and calendar integration
+- **Document Service**: Handles product catalog requests and PDF delivery
+- **Notification System**: Manages email confirmations and alerts
+
+### Scalable Deployment
+- **Container Orchestration**: WAHA deployed in isolated containers for reliability
+- **API Rate Limiting**: Intelligent handling of WhatsApp API limits
+- **Error Recovery**: Comprehensive error handling and retry mechanisms
+
+## Challenges and Learnings
+
+### Integration Complexity
+Managing multiple APIs and services required careful orchestration and error handling. The n8n workflow needed to handle various failure scenarios while maintaining a smooth user experience.
+
+### AI Response Quality
+Fine-tuning GPT-4.1 responses to maintain brand voice while providing accurate business information required iterative prompt engineering and context management.
+
+### WhatsApp API Limitations
+Working within WhatsApp's messaging policies and rate limits required implementing intelligent queuing and message batching strategies.
+
+### Real-time Synchronization
+Ensuring data consistency across Google Calendar, Supabase, and the chatbot required implementing proper event handling and conflict resolution.
+
+## Business Impact
+
+- **24/7 Availability**: Customers can interact with the store outside business hours
+- **Reduced Manual Work**: Automated reservation handling saves staff time
+- **Improved Customer Experience**: Instant responses and seamless booking process
+- **Data Collection**: Automated capture of customer interactions and preferences
+- **Scalability**: System can handle multiple concurrent conversations
+
+This project demonstrates the power of modern automation tools and AI integration to create sophisticated business solutions without traditional heavy development overhead.
