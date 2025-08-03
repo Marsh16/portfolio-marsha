@@ -17,6 +17,8 @@ type Metadata = {
     images: string[];
     tag?: string;
     team: Team[];
+    readTime?: string;
+    tags?: string[];
 };
 
 function getMDXFiles(dir: string) {
