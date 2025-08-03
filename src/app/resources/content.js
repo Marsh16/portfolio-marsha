@@ -1,4 +1,6 @@
-const createContent = (t) => {
+import messages from "../../../messages/en.json";
+
+const createContent = () => {
   const person = {
     firstName: "Marsha Alexis",
     lastName: "Likorawung",
@@ -84,13 +86,9 @@ const createContent = (t) => {
         },
         {
           company: "Apple Developer Academy @ UC",
-          timeframe: t(
-            "about.work.experiences.Apple Developer Academy @ UC.timeframe"
-          ),
-          role: t("about.work.experiences.Apple Developer Academy @ UC.role"),
-          achievements: t(
-            "about.work.experiences.Apple Developer Academy @ UC.achievements"
-          ).split(";"),
+          timeframe: messages.about.work.experiences["Apple Developer Academy @ UC"].timeframe,
+          role: messages.about.work.experiences["Apple Developer Academy @ UC"].role,
+          achievements: messages.about.work.experiences["Apple Developer Academy @ UC"].achievements.split(";"),
           images: [
             {
               src: "/images/projects/project-01/certificate-apple.jpeg",
@@ -120,24 +118,16 @@ const createContent = (t) => {
         },
         {
           company: "Teaching & Learning Innovation Center",
-          timeframe: t(
-            "about.work.experiences.Teaching & Learning Innovation Center.timeframe"
-          ),
-          role: t(
-            "about.work.experiences.Teaching & Learning Innovation Center.role"
-          ),
-          achievements: t(
-            "about.work.experiences.Teaching & Learning Innovation Center.achievements"
-          ).split(";"),
+          timeframe: messages.about.work.experiences["Teaching & Learning Innovation Center"].timeframe,
+          role: messages.about.work.experiences["Teaching & Learning Innovation Center"].role,
+          achievements: messages.about.work.experiences["Teaching & Learning Innovation Center"].achievements.split(";"),
           images: [],
         },
         {
           company: "Biro Bebras UC",
-          timeframe: t("about.work.experiences.Biro Bebras UC.timeframe"),
-          role: t("about.work.experiences.Biro Bebras UC.role"),
-          achievements: t(
-            "about.work.experiences.Biro Bebras UC.achievements"
-          ).split(";"),
+          timeframe: messages.about.work.experiences["Biro Bebras UC"].timeframe,
+          role: messages.about.work.experiences["Biro Bebras UC"].role,
+          achievements: messages.about.work.experiences["Biro Bebras UC"].achievements.split(";"),
           images: [
             {
               src: "/images/projects/project-01/experiences/bebras.png",
@@ -149,13 +139,9 @@ const createContent = (t) => {
         },
         {
           company: "Universitas Ciputra Surabaya",
-          timeframe: t(
-            "about.work.experiences.Universitas Ciputra Surabaya.timeframe"
-          ),
-          role: t("about.work.experiences.Universitas Ciputra Surabaya.role"),
-          achievements: t(
-            "about.work.experiences.Universitas Ciputra Surabaya.achievements"
-          ).split(";"),
+          timeframe: messages.about.work.experiences["Universitas Ciputra Surabaya"].timeframe,
+          role: messages.about.work.experiences["Universitas Ciputra Surabaya"].role,
+          achievements: messages.about.work.experiences["Universitas Ciputra Surabaya"].achievements.split(";"),
           images: [],
         },
       ],
@@ -168,9 +154,7 @@ const createContent = (t) => {
           name: "Universitas Ciputra Surabaya",
           description: (
             <>
-              {t(
-                `about.studies.institutions.Universitas Ciputra Surabaya.description`
-              )}
+              {messages.about.studies.institutions["Universitas Ciputra Surabaya"].description}
             </>
           ),
         },
@@ -230,12 +214,12 @@ const createContent = (t) => {
     },
     technical: {
       display: true,
-      title: t("about.technical.title"),
+      title: messages.about.technical.title,
       categories: {
         "Programming Languages": [
           {
             title: "Python",
-            description: <>{t("about.technical.categories.Programming Languages.Python.description")}</>,
+            description: <>{messages.about.technical.categories["Programming Languages"].Python.description}</>,
             images: [
               {
                 src: "/images/projects/project-01/python.png",
@@ -247,7 +231,7 @@ const createContent = (t) => {
           },
           {
             title: "Swift",
-            description: <>{t("about.technical.categories.Programming Languages.Swift.description")}</>,
+            description: <>{messages.about.technical.categories["Programming Languages"].Swift.description}</>,
             images: [
               {
                 src: "/images/projects/project-01/swift.png",
@@ -259,97 +243,97 @@ const createContent = (t) => {
           },
           {
             title: "JavaScript & TypeScript",
-            description: <>{t("about.technical.categories.Programming Languages.JavaScript & TypeScript.description")}</>,
+            description: <>{messages.about.technical.categories["Programming Languages"]["JavaScript & TypeScript"].description}</>,
           },
           {
             title: "Dart & Flutter",
-            description: <>{t("about.technical.categories.Programming Languages.Dart & Flutter.description")}</>,
+            description: <>{messages.about.technical.categories["Programming Languages"]["Dart & Flutter"].description}</>,
           },
           {
             title: "Go (Golang)",
-            description: <>{t("about.technical.categories.Programming Languages.Go (Golang).description")}</>,
+            description: <>{messages.about.technical.categories["Programming Languages"]["Go (Golang)"].description}</>,
           },
           {
             title: "PHP",
-            description: <>{t("about.technical.categories.Programming Languages.PHP.description")}</>,
+            description: <>{messages.about.technical.categories["Programming Languages"].PHP.description}</>,
           },
         ],
         "AI & Machine Learning": [
           {
             title: "Deep Learning & Computer Vision",
-            description: <>{t("about.technical.categories.AI & Machine Learning.Deep Learning & Computer Vision.description")}</>,
+            description: <>{messages.about.technical.categories["AI & Machine Learning"]["Deep Learning & Computer Vision"].description}</>,
           },
           {
             title: "Natural Language Processing & LLMs",
-            description: <>{t("about.technical.categories.AI & Machine Learning.Natural Language Processing & LLMs.description")}</>,
+            description: <>{messages.about.technical.categories["AI & Machine Learning"]["Natural Language Processing & LLMs"].description}</>,
           },
           {
             title: "Machine Learning Operations",
-            description: <>{t("about.technical.categories.AI & Machine Learning.Machine Learning Operations.description")}</>,
+            description: <>{messages.about.technical.categories["AI & Machine Learning"]["Machine Learning Operations"].description}</>,
           },
           {
             title: "AI Integration & APIs",
-            description: <>{t("about.technical.categories.AI & Machine Learning.AI Integration & APIs.description")}</>,
+            description: <>{messages.about.technical.categories["AI & Machine Learning"]["AI Integration & APIs"].description}</>,
           },
         ],
         "Mobile Development": [
           {
             title: "iOS Development",
-            description: <>{t("about.technical.categories.Mobile Development.iOS Development.description")}</>,
+            description: <>{messages.about.technical.categories["Mobile Development"]["iOS Development"].description}</>,
           },
           {
             title: "Cross-Platform Development",
-            description: <>{t("about.technical.categories.Mobile Development.Cross-Platform Development.description")}</>,
+            description: <>{messages.about.technical.categories["Mobile Development"]["Cross-Platform Development"].description}</>,
           },
           {
             title: "Mobile Backend Integration",
-            description: <>{t("about.technical.categories.Mobile Development.Mobile Backend Integration.description")}</>,
+            description: <>{messages.about.technical.categories["Mobile Development"]["Mobile Backend Integration"].description}</>,
           },
         ],
         "Web Development": [
           {
             title: "Frontend Frameworks",
-            description: <>{t("about.technical.categories.Web Development.Frontend Frameworks.description")}</>,
+            description: <>{messages.about.technical.categories["Web Development"]["Frontend Frameworks"].description}</>,
           },
           {
             title: "Backend Development",
-            description: <>{t("about.technical.categories.Web Development.Backend Development.description")}</>,
+            description: <>{messages.about.technical.categories["Web Development"]["Backend Development"].description}</>,
           },
           {
             title: "Styling & UI/UX",
-            description: <>{t("about.technical.categories.Web Development.Styling & UI/UX.description")}</>,
+            description: <>{messages.about.technical.categories["Web Development"]["Styling & UI/UX"].description}</>,
           },
         ],
         "Databases & Cloud": [
           {
             title: "Database Management",
-            description: <>{t("about.technical.categories.Databases & Cloud.Database Management.description")}</>,
+            description: <>{messages.about.technical.categories["Databases & Cloud"]["Database Management"].description}</>,
           },
           {
             title: "Cloud Platforms & Deployment",
-            description: <>{t("about.technical.categories.Databases & Cloud.Cloud Platforms & Deployment.description")}</>,
+            description: <>{messages.about.technical.categories["Databases & Cloud"]["Cloud Platforms & Deployment"].description}</>,
           },
           {
             title: "Authentication & Security",
-            description: <>{t("about.technical.categories.Databases & Cloud.Authentication & Security.description")}</>,
+            description: <>{messages.about.technical.categories["Databases & Cloud"]["Authentication & Security"].description}</>,
           },
         ],
         "Specialized Technologies": [
           {
             title: "Workflow Automation",
-            description: <>{t("about.technical.categories.Specialized Technologies.Workflow Automation.description")}</>,
+            description: <>{messages.about.technical.categories["Specialized Technologies"]["Workflow Automation"].description}</>,
           },
           {
             title: "Payment Integration",
-            description: <>{t("about.technical.categories.Specialized Technologies.Payment Integration.description")}</>,
+            description: <>{messages.about.technical.categories["Specialized Technologies"]["Payment Integration"].description}</>,
           },
           {
             title: "OCR & Document Processing",
-            description: <>{t("about.technical.categories.Specialized Technologies.OCR & Document Processing.description")}</>,
+            description: <>{messages.about.technical.categories["Specialized Technologies"]["OCR & Document Processing"].description}</>,
           },
           {
             title: "Game Development",
-            description: <>{t("about.technical.categories.Specialized Technologies.Game Development.description")}</>,
+            description: <>{messages.about.technical.categories["Specialized Technologies"]["Game Development"].description}</>,
           },
         ],
       },
@@ -357,15 +341,15 @@ const createContent = (t) => {
   };
 
   const work = {
-    label: t("work.label"),
-    title: t("work.title"),
-    description: t("work.description", { name: person.name }),
+    label: messages.work.label,
+    title: messages.work.title,
+    description: messages.work.description,
   };
 
   const blog = {
-    label: t("blog.label"),
-    title: t("blog.title"),
-    description: t("blog.description"),
+    label: messages.blog.label,
+    title: messages.blog.title,
+    description: messages.blog.description,
   };
 
   return {

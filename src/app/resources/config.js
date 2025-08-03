@@ -1,7 +1,7 @@
 const baseURL = 'portfolio-marsha.vercel.app'
 
 // Enable localization
-const i18n = true;
+const i18n = false;
 
 // Manage localized content in the messages folder
 const i18nOptions = {
