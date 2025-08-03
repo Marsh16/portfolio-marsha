@@ -1,5 +1,3 @@
-import { InlineCode } from "@/once-ui/components";
-
 const createContent = (t) => {
   const person = {
     firstName: "Marsha Alexis",
@@ -36,7 +34,7 @@ const createContent = (t) => {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Engineer focused on AI, iOS, and Scalable Tech Solutions</>,
-    subline: <>Hi, I'm Marsha — a Software Engineer passionate about building intelligent systems and user-centric apps. Currently a Software Engineer with real-world experience in AI, iOS, and full-stack development.</>,
+    subline: <>Hi, I&apos;m Marsha — a Software Engineer passionate about building intelligent systems and user-centric apps. Currently a Software Engineer with real-world experience in AI, iOS, and full-stack development.</>,
   };
 
   const about = {
@@ -57,7 +55,7 @@ const createContent = (t) => {
     intro: {
       display: true,
       title: "Introduction",
-      description: <>I am a Surabaya-based developer with a strong foundation in software engineering, specializing in artificial intelligence, iOS development, and backend systems. I'm eager to join forward-thinking teams to create impactful, scalable, and human-centric tech solutions.</>,
+      description: <>I am a Surabaya-based developer with a strong foundation in software engineering, specializing in artificial intelligence, iOS development, and backend systems. I&apos;m eager to join forward-thinking teams to create impactful, scalable, and human-centric tech solutions.</>,
     },
     work: {
       display: true,
