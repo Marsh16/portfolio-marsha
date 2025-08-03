@@ -1,0 +1,122 @@
+---
+title: "🔍 Exploring Apple's On-Device Foundation Model: A Real-World Test with Receipt OCR"
+publishedAt: "2025-06-17"
+summary: "With the release of Apple's Foundation Models at WWDC 2025, I tested the new LanguageModelSession API against cloud-based models like Gemini using a real-world OCR task. Here's what I discovered about performance, privacy, and practical implementation."
+image: "/images/articles/project-01/ocrapple.png"
+tags: ["Swift", "AI", "FoundationModel", "AppleLLM", "WWDC25", "iOS18", "MachineLearning", "OCR", "OnDeviceAI"]
+readTime: "5 min read"
+---
+
+With the release of Apple's [Foundation Models](https://developer.apple.com/documentation/foundationmodels) at WWDC 2025, I was excited to try out the new `LanguageModelSession` API and compare it to cloud-based models like Gemini. My test case? A simple OCR task using a scanned receipt image.
+
+## 💡 What I Built
+
+I created a Swift function that sends an OCR result from Vision framework along with a prompt to the new on-device Foundation Model. Here's the key logic:
+
+> After performing OCR on the image using Vision, we craft a natural language prompt that includes both the OCR-extracted text and clear instructions for the model. Then we pass it to Apple's on-device Foundation model via `LanguageModelSession`:
+
+```swift
+import Vision
+import FoundationModels
+
+// Resize the input image for optimal OCR performance
+guard let resizedImage = resizeImage(image: image, maxWidth: 1024),
+      let cgImage = resizedImage.cgImage else {
+    print("Failed to resize image or convert to CGImage")
+    return nil
+}
+
+// Perform OCR using Vision framework
+let recognizedText = try await extractTextFromImage(cgImage: cgImage)
+guard !recognizedText.isEmpty else {
+    print("OCR result is empty")
+    return nil
+}
+
+// Prepare the full prompt by combining OCR output and custom instructions
+let fullPrompt = """
+Receipt:
+\(recognizedText)
+
+Instructions:
+\(prompt)
+"""
+
+// Use Apple Foundation's LanguageModelSession for LLM response
+let session = LanguageModelSession()
+let response = try await session.respond(to: fullPrompt)
+
+// Extract and validate the model's text response
+guard let text = response.content as? String else {
+    print("Model returned no valid text")
+    return nil
+}
+```
+
+## ⏱️ Performance Comparison
+
+I compared Apple's on-device model with Gemini using the same image (a sample receipt) and prompt.
+
+### Apple Foundation Model
+
+- **Runs On**: On-device (offline capable)
+- **Response Time**: ~8 seconds (receipt OCR test)
+- **Internet Needed**: ❌ No
+- **Free to Use**: ✅ Yes (no tokens, no API key)
+- **Privacy**: ✅ Fully local (data stays on device)
+- **Integration**: ✅ Native Swift API (`LanguageModelSession`)
+
+### Gemini (Cloud-Based)
+
+- **Runs On**: Cloud (internet connection required)
+- **Response Time**: ~5.0 seconds (same receipt test)
+- **Internet Needed**: ✅ Yes
+- **Free to Use**: ⚠️ Depends on API plan (token limits apply)
+- **Privacy**: ❌ Sends image and prompt to external server
+- **Integration**: Requires API key, REST call setup
+
+## Demo
+
+Testing out using the scan feature with foundation model to **BillBro: Split Bills for Trips Available on App Store**
+
+[Watch Demo Video](https://drive.google.com/file/d/1dL9e62iYZ0Ry9yWoEsYJk7YE5jl05vFd/view?usp=sharing)
+
+## 🚀 Why This Matters
+
+- **Offline Inference**: You don't need an internet connection. Great for travel, fieldwork, or privacy-first apps.
+- **No API Quotas**: No need to manage keys, tokens, or billing usage.
+- **Privacy First**: All processing happens on-device, ensuring user data never leaves their device.
+- **Native Integration**: Seamless Swift API integration without external dependencies.
+
+## Key Takeaways
+
+1. **Performance Trade-off**: Apple's on-device model is slightly slower (~8s vs ~5s) but offers significant privacy and offline benefits.
+
+2. **Cost Efficiency**: No API costs or token limits make it ideal for production apps with high usage.
+
+3. **Privacy Advantage**: Complete data privacy with no external server communication.
+
+4. **Development Experience**: Native Swift integration feels more natural than REST API calls.
+
+## Implementation Tips
+
+- **Image Preprocessing**: Resize images to 1024px width for optimal OCR performance
+- **Error Handling**: Always validate OCR results before sending to the Foundation Model
+- **Prompt Engineering**: Combine OCR text with clear instructions for better results
+- **Response Validation**: Check that the model returns valid text content
+
+## Future Possibilities
+
+Apple's Foundation Models open up exciting possibilities for:
+- **Offline AI Apps**: Perfect for travel, remote work, or privacy-sensitive applications
+- **Real-time Processing**: No network latency for instant responses
+- **Cost-effective Solutions**: No per-request costs for high-volume applications
+- **Privacy-first Features**: Build trust with users through local processing
+
+If you're curious and want to install beta versions, I highly recommend giving Foundation Model a try. It's a powerful, privacy-first LLM that feels surprisingly lightweight — yet smart.
+
+Let me know what you're building with it!
+
+---
+
+*This article was originally published on [Medium](https://medium.com/@marshaalexis16/exploring-apples-on-device-foundation-model-a-real-world-test-with-receipt-ocr-59ffda9bc55b). Follow me for more iOS development insights and AI integration tutorials.*

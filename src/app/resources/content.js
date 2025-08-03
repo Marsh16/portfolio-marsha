@@ -7,7 +7,7 @@ const createContent = (t) => {
     get name() {
       return `${this.firstName} ${this.lastName}`;
     },
-    role: t("person.role"),
+    role: "Software Engineer & AI Enthusiast",
     avatar: "/images/avatar.jpg",
     location: "Asia/Jakarta",
     languages: ["English", "Bahasa"],
@@ -32,21 +32,17 @@ const createContent = (t) => {
   ];
 
   const home = {
-    label: t("home.label"),
-    title: t("home.title", { name: person.name }),
-    description: t("home.description", { role: person.role }),
-    headline: <>{t("home.headline")}</>,
-    subline: <>{t("home.subline")}</>,
+    label: "Home",
+    title: `${person.name}'s Portfolio`,
+    description: `Portfolio website showcasing my work as a ${person.role}`,
+    headline: <>Software Engineer focused on AI, iOS, and Scalable Tech Solutions</>,
+    subline: <>Hi, I'm Marsha — a Software Engineer passionate about building intelligent systems and user-centric apps. Currently a Software Engineer with real-world experience in AI, iOS, and full-stack development.</>,
   };
 
   const about = {
-    label: t("about.label"),
-    title: t("about.title"),
-    description: t("about.description", {
-      name: person.name,
-      role: person.role,
-      location: person.location,
-    }),
+    label: "About",
+    title: "About Me",
+    description: `Meet ${person.name}, a Software Engineer from Surabaya, Indonesia`,
     tableOfContent: {
       display: true,
       subItems: true,
@@ -60,50 +56,32 @@ const createContent = (t) => {
     },
     intro: {
       display: true,
-      title: t("about.intro.title"),
-      description: <>{t("about.intro.description")}</>,
+      title: "Introduction",
+      description: <>I am a Surabaya-based developer with a strong foundation in software engineering, specializing in artificial intelligence, iOS development, and backend systems. I'm eager to join forward-thinking teams to create impactful, scalable, and human-centric tech solutions.</>,
     },
     work: {
       display: true,
-      title: t("about.work.title"),
+      title: "Work Experience",
       experiences: [
         {
           company: "IBM Watsonx Project SkillsBuild x Universitas Ciputra",
-          timeframe: t(
-            "about.work.experiences.IBM Watsonx Project SkillsBuild x Universitas Ciputra.timeframe"
-          ),
-          role: t(
-            "about.work.experiences.IBM Watsonx Project SkillsBuild x Universitas Ciputra.role"
-          ),
-          achievements: t(
-            "about.work.experiences.IBM Watsonx Project SkillsBuild x Universitas Ciputra.achievements"
-          ).split(";"),
+          timeframe: "February 2025 – August 2025",
+          role: "AI Developer (LLM & Computer Vision)",
+          achievements: ["In collaboration with Universitas Ciputra, developed and deployed an AI-powered platform (https://leafs-ai.vercel.app/) using IBM Watsonx Granite LLM. Implemented an image classification pipeline for leaf disease detection, and integrated a question-answering system using LLMs to provide contextual responses about detected diseases. The solution combines computer vision with large language models for enhanced user interaction and decision support."],
           images: [],
         },
         {
           company: "Appstore Bootcamp",
-          timeframe: t(
-            "about.work.experiences.Appstore Bootcamp.timeframe"
-          ),
-          role: t(
-            "about.work.experiences.Appstore Bootcamp.role"
-          ),
-          achievements: t(
-            "about.work.experiences.Appstore Bootcamp.achievements"
-          ).split(";"),
+          timeframe: "March 2025 - August 2025",
+          role: "iOS Developer",
+          achievements: ["Chosen as a participant in the prestigious App Store Bootcamp, where I evolved my app *BillBro*—a smart bill-splitting tool—from concept to market. The program sharpened my skills in product marketing, App Store optimization (ASO), user onboarding, and UI/UX design. I successfully launched *BillBro* with key features like auto-split, multi-currency support, and intuitive summaries, backed by feedback-driven iteration cycles."],
           images: [],
         },
         {
           company: "PT Salam Pacific Indonesia Lines",
-          timeframe: t(
-            "about.work.experiences.PT Salam Pacific Indonesia Lines.timeframe"
-          ),
-          role: t(
-            "about.work.experiences.PT Salam Pacific Indonesia Lines.role"
-          ),
-          achievements: t(
-            "about.work.experiences.PT Salam Pacific Indonesia Lines.achievements"
-          ).split(";"),
+          timeframe: "February 2025 - August 2025",
+          role: "Artificial Intelligence Intern",
+          achievements: ["As an AI Intern at PT SPIL, I delivered end-to-end solutions across mobile, frontend, backend, and AI systems. I worked on OCR data extraction using the Gemini API within a Flutter-based car management app, enabling automatic reading of vehicle documents like STNK and invoices. I also built a machine learning model to predict logistics lead time using Python, pandas, and scikit-learn — helping the team estimate delivery durations more accurately.\n\nI developed an auto-retraining image classification system for item checkout, where the model could automatically update itself as new labeled images were added, reducing the need for manual retraining. This was containerized using Docker, making it easier to deploy and scale.\n\nOn the frontend, I worked with React and Next.js to build internal dashboards for testing and monitoring ML models. I also collaborated on Laravel-based backend services and contributed to JWT-based authentication for API security and role-based access.\n\nI experimented with Flask for building lightweight inference APIs, and integrated LLMs (Gemini and Gemma) into some prototypes — including one for document Q&A and another for enhancing OCR output validation.\n\nThrough this internship, I deepened my understanding of deploying AI in production, working across the stack from mobile and web frontend to backend services, devops, and ML/LLM model integration."],
           images: [],
         },
         {
@@ -385,12 +363,20 @@ const createContent = (t) => {
     title: t("work.title"),
     description: t("work.description", { name: person.name }),
   };
+
+  const blog = {
+    label: t("blog.label"),
+    title: t("blog.title"),
+    description: t("blog.description"),
+  };
+
   return {
     person,
     social,
     home,
     about,
     work,
+    blog,
   };
 };
 

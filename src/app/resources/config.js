@@ -1,7 +1,7 @@
 const baseURL = 'portfolio-marsha.vercel.app'
 
 // Enable localization
-const i18n = false;
+const i18n = true;
 
 // Manage localized content in the messages folder
 const i18nOptions = {
@@ -12,7 +12,8 @@ const i18nOptions = {
 const routes = {
     '/':        true,
     '/about':   true,
-    '/work':    true
+    '/work':    true,
+    '/blog':    true
 }
 
 // Enable password protection on selected routes

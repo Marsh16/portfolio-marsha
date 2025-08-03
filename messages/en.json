@@ -167,6 +167,11 @@
     "title": "My Projects",
     "description": "A selection of projects that showcase my development experience, innovation, and AI application"
   },
+  "blog": {
+    "label": "Blog",
+    "title": "Articles & Insights",
+    "description": "Technical articles, tutorials, and insights from my development journey"
+  },
   "projectCard": {
     "label": "Read Case Study"
   }
