@@ -362,15 +362,15 @@ const createContent = () => {
           title: "Apple Developer Academy Certificate",
           organization: "Apple Developer Academy @ UC",
           date: "2024-12-30",
-          description: "Completed intensive iOS development program focusing on Swift, SwiftUI, and App Store optimization. Developed and published BillBro app with 300+ downloads.",
-          image: "/images/achievements/apple-developer-academy.jpg",
-          credentialUrl: "https://developer.apple.com/academy/",
+          description: "Completed intensive iOS development program focusing on Swift, SwiftUI, and App Store optimization. Developed and published BillBro app with 500+ downloads.",
+          image: "/images/projects/project-01/certificate-apple.jpeg?w=3840&q=75",
+          credentialUrl: "https://appledeveloperacademy.uc.ac.id/",
           skills: ["Swift", "SwiftUI", "iOS Development", "App Store Optimization", "Product Design"]
         },
         {
-          title: "IBM SkillsBuild AI Fundamentals",
+          title: "IBM SkillsBuild",
           organization: "IBM SkillsBuild",
-          date: "2025-08-8",
+          date: "2025-08-08",
           description: "Comprehensive AI and machine learning program covering IBM Watsonx, computer vision, and LLM integration. Built LeafsAI platform with 99.5% accuracy.",
           image: "/images/achievements/ibm-skillsbuild.jpg",
           credentialUrl: "https://skillsbuild.org/",
@@ -380,7 +380,7 @@ const createContent = () => {
       "Courses & Training": [
         {
           title: "App Store Bootcamp",
-          organization: "Apple",
+          organization: "Apple Developer Academy",
           date: "2025-08-31",
           description: "Intensive bootcamp on app marketing, ASO, user onboarding, and UI/UX design. Enhanced BillBro with improved user experience and market positioning.",
           image: "/images/achievements/apple-logo.png",
@@ -388,6 +388,14 @@ const createContent = () => {
         }
       ],
       "Competitions": [
+        {
+          title: "East Java Data Hackathon 2023",
+          organization: "JCI East Java & JCI4TECH",
+          date: "2023-09-24",
+          description: "Participated as a competitor in the East Java KIM Hackathon 2023 with the theme 'Igniting Innovation Together!' organized by JCI4TECH from September 22-24, 2023. Successfully completed the hackathon competition focused on data innovation and technology solutions.",
+          image: "/images/achievements/east-java-hackathon-2023.jpg",
+          skills: ["Hackathon", "Innovation", "Technology Solutions", "Team Collaboration"]
+        },
         {
           title: "LO KREATIF 2023 - Lomba Nasional Kreativitas Mahasiswa",
           organization: "APTISI WIL VII Jawa Timur",
