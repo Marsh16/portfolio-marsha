@@ -352,6 +352,88 @@ const createContent = () => {
     description: messages.blog.description,
   };
 
+  const achievements = {
+    label: messages.achievements.label,
+    title: messages.achievements.title,
+    description: messages.achievements.description,
+    categories: {
+      "Certifications": [
+        {
+          title: "Apple Developer Academy Certificate",
+          organization: "Apple Developer Academy @ UC",
+          date: "2025-08-15",
+          description: "Completed intensive iOS development program focusing on Swift, SwiftUI, and App Store optimization. Developed and published BillBro app with 300+ downloads.",
+          image: "/images/achievements/apple-developer-academy.jpg",
+          credentialUrl: "https://developer.apple.com/academy/",
+          skills: ["Swift", "SwiftUI", "iOS Development", "App Store Optimization", "Product Design"]
+        },
+        {
+          title: "IBM SkillsBuild AI Fundamentals",
+          organization: "IBM SkillsBuild",
+          date: "2025-02-10",
+          description: "Comprehensive AI and machine learning program covering IBM Watsonx, computer vision, and LLM integration. Built LeafsAI platform with 99.5% accuracy.",
+          image: "/images/achievements/ibm-skillsbuild.jpg",
+          credentialUrl: "https://skillsbuild.org/",
+          skills: ["IBM Watsonx", "Machine Learning", "Computer Vision", "LLM Integration", "AI Development"]
+        }
+      ],
+      "Courses & Training": [
+        {
+          title: "App Store Bootcamp",
+          organization: "Apple",
+          date: "2025-08-01",
+          description: "Intensive bootcamp on app marketing, ASO, user onboarding, and UI/UX design. Enhanced BillBro with improved user experience and market positioning.",
+          image: "/images/achievements/app-store-bootcamp.jpg",
+          skills: ["App Store Optimization", "Product Marketing", "UI/UX Design", "User Onboarding"]
+        },
+        {
+          title: "Advanced Swift Programming",
+          organization: "Stanford University (Online)",
+          date: "2024-12-15",
+          description: "Advanced iOS development concepts including Core Data, networking, and performance optimization.",
+          skills: ["Swift", "Core Data", "Networking", "Performance Optimization"]
+        }
+      ],
+      "Competitions": [
+        {
+          title: "Bebras Computational Thinking Challenge",
+          organization: "Universitas Ciputra",
+          date: "2024-11-20",
+          description: "Participated in international computational thinking competition, demonstrating problem-solving skills and algorithmic thinking.",
+          image: "/images/achievements/bebras-competition.jpg",
+          skills: ["Computational Thinking", "Problem Solving", "Algorithms"]
+        }
+      ],
+      "Awards & Recognition": [
+        {
+          title: "Full Score Achievement of Red Carpet Night 2022",
+          organization: "School of Information Technology · Universitas Ciputra Surabaya",
+          date: "2022-02-25",
+          description: "Achieved Full Score Award (4.0 GPA) from Red Carpet Night 2022. This event is held by the School of Information Technology Universitas Ciputra Surabaya on the 25th February 2022.",
+          image: "/images/achievements/red-carpet-night-2022.jpg",
+          skills: ["Academic Excellence", "Information Technology", "4.0 GPA"]
+        },
+        {
+          title: "Outstanding AI Intern",
+          organization: "PT Salam Pacific Indonesia Lines",
+          date: "2025-08-30",
+          description: "Recognized for exceptional performance in developing end-to-end AI solutions, including OCR systems, ML models, and full-stack applications.",
+          skills: ["AI Development", "Full-Stack Development", "OCR", "Machine Learning"]
+        }
+      ],
+      "Publications": [
+        {
+          title: "Implementation of DenseNet Architecture for Mango Leaf Disease Classification",
+          organization: "SINTA-4 Indexed Journal",
+          date: "2025-01-07",
+          description: "Published research paper achieving 99.5% accuracy in mango leaf disease classification using deep learning and transfer learning techniques.",
+          credentialUrl: "https://example.com/research-paper",
+          skills: ["Deep Learning", "Computer Vision", "Research", "Academic Writing", "DenseNet"]
+        }
+      ]
+    }
+  };
+
   return {
     person,
     social,
@@ -359,6 +441,7 @@ const createContent = () => {
     about,
     work,
     blog,
+    achievements,
   };
 };
 

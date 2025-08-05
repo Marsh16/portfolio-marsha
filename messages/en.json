@@ -172,6 +172,11 @@
     "title": "Articles & Insights",
     "description": "Technical articles, tutorials, and insights from my development journey"
   },
+  "achievements": {
+    "label": "Achievements",
+    "title": "Achievements & Accomplishments",
+    "description": "A showcase of my professional certifications, course completions, competition results, and recognition awards"
+  },
   "projectCard": {
     "label": "Read Case Study"
   }

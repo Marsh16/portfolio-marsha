@@ -68,7 +68,7 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery } = renderContent(t);
+    const { person, home, about, blog, work, achievements, gallery } = renderContent(t);
 
     return (
         <>
@@ -131,6 +131,14 @@ export const Header = () => {
                                     href={`/${params?.locale}/blog`}
                                     selected={pathname.startsWith('/blog')}>
                                     <Flex paddingX="2" hide="s">{blog.label}</Flex>
+                                </ToggleButton>
+                            )}
+                            { routes['/achievements'] && (
+                                <ToggleButton
+                                    prefixIcon="award"
+                                    href={`/${params?.locale}/achievements`}
+                                    selected={pathname.startsWith('/achievements')}>
+                                    <Flex paddingX="2" hide="s">{achievements.label}</Flex>
                                 </ToggleButton>
                             )}
                             {/* { routes['/gallery'] && (
