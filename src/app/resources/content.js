@@ -361,7 +361,7 @@ const createContent = () => {
         {
           title: "Apple Developer Academy Certificate",
           organization: "Apple Developer Academy @ UC",
-          date: "2025-08-15",
+          date: "2024-12-30",
           description: "Completed intensive iOS development program focusing on Swift, SwiftUI, and App Store optimization. Developed and published BillBro app with 300+ downloads.",
           image: "/images/achievements/apple-developer-academy.jpg",
           credentialUrl: "https://developer.apple.com/academy/",
@@ -370,7 +370,7 @@ const createContent = () => {
         {
           title: "IBM SkillsBuild AI Fundamentals",
           organization: "IBM SkillsBuild",
-          date: "2025-02-10",
+          date: "2025-08-8",
           description: "Comprehensive AI and machine learning program covering IBM Watsonx, computer vision, and LLM integration. Built LeafsAI platform with 99.5% accuracy.",
           image: "/images/achievements/ibm-skillsbuild.jpg",
           credentialUrl: "https://skillsbuild.org/",
@@ -381,27 +381,20 @@ const createContent = () => {
         {
           title: "App Store Bootcamp",
           organization: "Apple",
-          date: "2025-08-01",
+          date: "2025-08-31",
           description: "Intensive bootcamp on app marketing, ASO, user onboarding, and UI/UX design. Enhanced BillBro with improved user experience and market positioning.",
-          image: "/images/achievements/app-store-bootcamp.jpg",
+          image: "/images/achievements/apple-logo.png",
           skills: ["App Store Optimization", "Product Marketing", "UI/UX Design", "User Onboarding"]
-        },
-        {
-          title: "Advanced Swift Programming",
-          organization: "Stanford University (Online)",
-          date: "2024-12-15",
-          description: "Advanced iOS development concepts including Core Data, networking, and performance optimization.",
-          skills: ["Swift", "Core Data", "Networking", "Performance Optimization"]
         }
       ],
       "Competitions": [
         {
-          title: "Bebras Computational Thinking Challenge",
-          organization: "Universitas Ciputra",
-          date: "2024-11-20",
-          description: "Participated in international computational thinking competition, demonstrating problem-solving skills and algorithmic thinking.",
-          image: "/images/achievements/bebras-competition.jpg",
-          skills: ["Computational Thinking", "Problem Solving", "Algorithms"]
+          title: "LO KREATIF 2023 - Lomba Nasional Kreativitas Mahasiswa",
+          organization: "APTISI WIL VII Jawa Timur",
+          date: "2023-11-14",
+          description: "Participated as UI/UX Design Category participant in the National Student Creativity Competition (LO KREATIF 2023) with the theme 'Building Synergy, Creativity and Innovation in Learning'. Organized by APTISI WIL VII East Java in Surabaya.",
+          image: "/images/achievements/lo-kreatif-2023.png",
+          skills: ["UI/UX Design", "Creativity", "Innovation", "Design Thinking", "Student Competition"]
         }
       ],
       "Awards & Recognition": [
