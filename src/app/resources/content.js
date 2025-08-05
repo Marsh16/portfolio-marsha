@@ -359,6 +359,17 @@ const createContent = () => {
     categories: {
       "Certifications": [
         {
+          title: "Artificial Intelligence Professional Certificate (CAIPC)",
+          organization: "Certiprof",
+          date: "2025-03-27",
+          expiryDate: "2028-01-26",
+          description: "Professional certification in Artificial Intelligence demonstrating comprehensive knowledge and skills in AI technologies, methodologies, and applications. Validates expertise in AI professional practices and industry standards.",
+          image: "/images/achievements/caipc-certificate.jpg",
+          credentialId: "JLRKSDSHPSR-WWTTQHVCW-YQWSYDSBDB",
+          credentialUrl: "https://www.credly.com/badges/fab4128e-1bd1-4434-8da7-66672841d004/public_url",
+          skills: ["Artificial Intelligence", "AI Professional Practices", "Machine Learning", "AI Ethics", "AI Implementation"]
+        },
+        {
           title: "Apple Developer Academy Certificate",
           organization: "Apple Developer Academy @ UC",
           date: "2024-12-30",
@@ -366,6 +377,17 @@ const createContent = () => {
           image: "/images/projects/project-01/certificate-apple.jpeg?w=3840&q=75",
           credentialUrl: "https://appledeveloperacademy.uc.ac.id/",
           skills: ["Swift", "SwiftUI", "iOS Development", "App Store Optimization", "Product Design"]
+        },
+        {
+          title: "Certified Programming",
+          organization: "Badan Nasional Sertifikasi Profesi (BNSP)",
+          date: "2024-12-01",
+          expiryDate: "2027-12-01",
+          description: "National professional certification in programming demonstrating comprehensive competency in software development, database management, and full-stack programming across multiple technologies and frameworks.",
+          image: "/images/achievements/bnsp-programming-certificate.jpeg",
+          credentialId: "J6201.2514.6.0003766.2024",
+          credentialUrl: "https://drive.google.com/file/d/1csfC7hoWF6fIlR8TJPVlR34wiMQvBUVv/view",
+          skills: ["MySQL", "Swift", "Back-End Web Development", "Computer Science", "Go", "Programming", "Databases", "REST", "Unit Testing", "OOP", "Front-End Development", "Debugging", "Attention to Detail"]
         },
         {
           title: "IBM SkillsBuild",

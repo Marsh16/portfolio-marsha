@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Flex, Heading, SmartImage, SmartLink, Text, Tag } from "@/once-ui/components";
 
 interface AchievementCardProps {
@@ -21,6 +22,8 @@ export const AchievementCard: React.FC<AchievementCardProps> = ({
     credentialUrl,
     skills = []
 }) => {
+    const [showAllSkills, setShowAllSkills] = useState(false);
+
     const formatDate = (dateString: string) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-US', {
@@ -106,14 +109,37 @@ export const AchievementCard: React.FC<AchievementCardProps> = ({
                 
                 {skills.length > 0 && (
                     <Flex gap="xs" wrap marginTop="xs">
-                        {skills.slice(0, 6).map((skill, index) => (
+                        {(showAllSkills ? skills : skills.slice(0, 6)).map((skill, index) => (
                             <Tag key={index} size="s" variant="neutral">
                                 {skill}
                             </Tag>
                         ))}
-                        {skills.length > 6 && (
-                            <Tag size="s" variant="neutral">
+                        {skills.length > 6 && !showAllSkills && (
+                            <Tag
+                                size="s"
+                                variant="neutral"
+                                onClick={() => setShowAllSkills(true)}
+                                style={{
+                                    cursor: 'pointer',
+                                    transition: 'var(--transition-micro-medium)'
+                                }}
+                                className="hover:bg-neutral-alpha-medium"
+                            >
                                 +{skills.length - 6} more
+                            </Tag>
+                        )}
+                        {showAllSkills && skills.length > 6 && (
+                            <Tag
+                                size="s"
+                                variant="neutral"
+                                onClick={() => setShowAllSkills(false)}
+                                style={{
+                                    cursor: 'pointer',
+                                    transition: 'var(--transition-micro-medium)'
+                                }}
+                                className="hover:bg-neutral-alpha-medium"
+                            >
+                                Show less
                             </Tag>
                         )}
                     </Flex>
