@@ -412,22 +412,15 @@ const createContent = () => {
           description: "Achieved Full Score Award (4.0 GPA) from Red Carpet Night 2022. This event is held by the School of Information Technology Universitas Ciputra Surabaya on the 25th February 2022.",
           image: "/images/achievements/red-carpet-night-2022.jpg",
           skills: ["Academic Excellence", "Information Technology", "4.0 GPA"]
-        },
-        {
-          title: "Outstanding AI Intern",
-          organization: "PT Salam Pacific Indonesia Lines",
-          date: "2025-08-30",
-          description: "Recognized for exceptional performance in developing end-to-end AI solutions, including OCR systems, ML models, and full-stack applications.",
-          skills: ["AI Development", "Full-Stack Development", "OCR", "Machine Learning"]
         }
       ],
       "Publications": [
         {
           title: "Implementation of DenseNet Architecture for Mango Leaf Disease Classification",
           organization: "SINTA-4 Indexed Journal",
-          date: "2025-01-07",
+          date: "2024-10-30",
           description: "Published research paper achieving 99.5% accuracy in mango leaf disease classification using deep learning and transfer learning techniques.",
-          credentialUrl: "https://example.com/research-paper",
+          credentialUrl: "https://jurnal.stts.edu/index.php/INSYST/article/view/401",
           skills: ["Deep Learning", "Computer Vision", "Research", "Academic Writing", "DenseNet"]
         }
       ]
