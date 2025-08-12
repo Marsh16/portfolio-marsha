@@ -72,7 +72,7 @@ const createContent = () => {
         },
         {
           company: "IBM Watsonx Project SkillsBuild x Universitas Ciputra",
-          timeframe: "February 2025 – August 2025",
+          timeframe: "February 2025 – September 2025",
           role: "AI Developer (LLM & Computer Vision)",
           achievements: ["In collaboration with Universitas Ciputra, developed and deployed an AI-powered platform (https://leafs-ai.vercel.app/) using IBM Watsonx Granite LLM. Implemented an image classification pipeline for leaf disease detection, and integrated a question-answering system using LLMs to provide contextual responses about detected diseases. The solution combines computer vision with large language models for enhanced user interaction and decision support."],
           images: [],
@@ -81,7 +81,7 @@ const createContent = () => {
           company: "Appstore Bootcamp",
           timeframe: "March 2025 - August 2025",
           role: "iOS Developer",
-          achievements: ["Chosen as a participant in the prestigious App Store Bootcamp, where I evolved my app *BillBro*—a smart bill-splitting tool—from concept to market. The program sharpened my skills in product marketing, App Store optimization (ASO), user onboarding, and UI/UX design. I successfully launched *BillBro* with key features like auto-split, multi-currency support, and intuitive summaries, backed by feedback-driven iteration cycles."],
+          achievements: ["Chosen as a participant in the prestigious App Store Bootcamp, where I evolved my app BillBro — a smart bill-splitting tool—from concept to market. The program sharpened my skills in product marketing, App Store optimization (ASO), user onboarding, and UI/UX design. I successfully launched BillBro with key features like auto-split, multi-currency support, and intuitive summaries, backed by feedback-driven iteration cycles."],
           images: [],
         },
         {
