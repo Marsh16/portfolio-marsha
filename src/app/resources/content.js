@@ -65,7 +65,14 @@ const createContent = () => {
       experiences: [
         {
           company: "Techflouu",
-          timeframe: "August 2025 – Present",
+          timeframe: "October 2025 – Present",
+          role: "Full Stack Engineer",
+          achievements: ["Creating end to end websites and applications using Nestjs with TypeORM using postgres as database and swagger ui for documentation, Reactjs with Nextjs, react native in expo for client projects"],
+          images: [],
+        },
+        {
+          company: "Techflouu",
+          timeframe: "August 2025 – October 2025",
           role: "Full Stack Engineer Intern",
           achievements: ["Creating end to end websites and applications using Nestjs with TypeORM using postgres as database and swagger ui for documentation, Reactjs with Nextjs, react native in expo for client projects"],
           images: [],
