@@ -7,7 +7,7 @@ const createContent = () => {
     get name() {
       return `${this.firstName} ${this.lastName}`;
     },
-    role: "Software Engineer & AI Enthusiast",
+    role: "Software Engineer & AI Developer",
     avatar: "/images/avatar.jpg",
     location: "Asia/Jakarta",
     languages: ["English", "Bahasa"],
